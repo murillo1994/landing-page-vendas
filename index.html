@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Sites de Alta Conversão & Landing Pages Exclusivas</title>
+
+    <meta name="description"
+        content="Desenvolvemos sites exclusivos e landing pages de alta conversão do zero. Design premium, velocidade máxima e estratégias focadas em vendas.">
+    <meta name="keywords" content="criação de sites, landing pages, web design premium, desenvolvimento web, sites de alta conversão">
+    <meta name="theme-color" content="#F4EAE3">
+
+    <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            bg: '#F4EAE3',        // Fundo Principal (Bege Claro/Areia)
+                            card: '#FFFFFF',      // Fundo dos Cards (Branco Puro)
+                            text: '#3A322C',      // Texto Principal (Marrom Escuro/Carvão)
+                            muted: '#6E6259',     // Texto Secundário Suave
+                            accent: '#B8926A',    // Cor de Destaque/Acento (Dourado/Cobre)
+                            accentDark: '#9E7750',// Dourado Escuro para Hover
+                            accentLight: '#FBF5F0',
+                            border: 'rgba(58, 50, 44, 0.1)',
+                            borderLight: 'rgba(58, 50, 44, 0.05)',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        heading: ['"Outfit"', 'sans-serif'],
+                    },
+                    animation: {
+                        'scroll-line': 'scrollLine 2.2s cubic-bezier(0.65, 0, 0.35, 1) infinite',
+                        'marquee': 'marquee 30s linear infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        scrollLine: {
+                            '0%': { transform: 'scaleY(0)', transformOrigin: 'top' },
+                            '45%': { transform: 'scaleY(1)', transformOrigin: 'top' },
+                            '55%': { transform: 'scaleY(1)', transformOrigin: 'bottom' },
+                            '100%': { transform: 'scaleY(0)', transformOrigin: 'bottom' },
+                        },
+                        marquee: {
+                            '0%': { transform: 'translateX(0%)' },
+                            '100%': { transform: 'translateX(-50%)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Efeito de brilho / luz passando no botão primário (igual à referência) */
+        .btn-shimmer {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-shimmer::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                60deg,
+                transparent 20%,
+                rgba(255, 255, 255, 0.4) 50%,
+                transparent 80%
+            );
+            transform: translateX(-100%) rotate(25deg);
+            animation: shimmerEffect 4s infinite ease-in-out;
+        }
+
+        @keyframes shimmerEffect {
+            0% { transform: translateX(-100%) rotate(25deg); }
+            30%, 100% { transform: translateX(100%) rotate(25deg); }
+        }
+
+        /* Tipografia vazada elegante para o letreiro marquee */
+        .marquee-outline {
+            -webkit-text-stroke: 1px rgba(58, 50, 44, 0.25);
+            color: transparent;
+            transition: all 0.3s ease;
+        }
+        .marquee-outline:hover {
+            color: #3A322C;
+            -webkit-text-stroke: 1px #3A322C;
+        }
+
+        /* Suavização de renderização de fontes */
+        body {
+            background-color: #F4EAE3;
+            color: #3A322C;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+</head>
+
+<body class="bg-brand-bg text-brand-text relative min-h-screen overflow-x-hidden selection:bg-brand-accent selection:text-white">
+
+    <!-- Ambient Glow / Iluminação de Fundo Suave -->
+    <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden" aria-hidden="true">
+        <div class="absolute -top-[15%] -left-[10%] w-[55vw] h-[55vw] max-w-[700px] max-h-[700px] bg-brand-accent/15 rounded-full blur-[120px]"></div>
+        <div class="absolute top-[40%] -right-[15%] w-[50vw] h-[50vw] max-w-[650px] max-h-[650px] bg-[#E8D5C4]/40 rounded-full blur-[140px]"></div>
+        <div class="absolute -bottom-[10%] left-[20%] w-[45vw] h-[45vw] max-w-[600px] max-h-[600px] bg-brand-accent/10 rounded-full blur-[100px]"></div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- HEADER / NAVEGAÇÃO EM PÍLULA FLUTUANTE ARREDONDADA ULTRA TRANSLÚCIDA        -->
+    <!-- ========================================================================= -->
+    <header class="fixed top-4 md:top-6 left-1/2 -translate-x-1/2 w-[94%] max-w-5xl z-50 transition-all duration-300">
+        <div class="w-full bg-white/20 hover:bg-white/30 backdrop-blur-md border border-brand-text/10 rounded-full px-5 md:px-7 py-2 md:py-2.5 flex items-center justify-between shadow-[0_4px_20px_rgba(58,50,44,0.03)] transition-all duration-300">
+            
+            <!-- Logotipo Estilo <Studio -->
+            <a href="#inicio" class="text-lg md:text-xl font-bold font-sans tracking-tight text-brand-text flex items-center gap-0.5 group shrink-0">
+                <span class="text-brand-accent font-mono font-medium text-lg">&lt;</span><span class="font-extrabold tracking-tight">Studio</span>
+            </a>
+
+            <!-- Menu de Links Centralizado (Desktop) -->
+            <nav class="hidden md:flex items-center gap-7 text-[13.5px] font-medium text-brand-text/80">
+                <a href="#inicio" class="text-brand-text font-bold border-b-2 border-brand-text pb-0.5 transition-all">Início</a>
+                <a href="#portfolio" class="hover:text-brand-accent transition-colors">Portfólio</a>
+                <a href="#planos" class="hover:text-brand-accent transition-colors">Planos</a>
+                <a href="#contato" class="hover:text-brand-accent transition-colors">Contato</a>
+            </nav>
+
+            <!-- CTA Estilo Pílula com Seta -->
+            <div class="flex items-center gap-2 shrink-0">
+                <a href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20iniciar%20um%20projeto."
+                   target="_blank" rel="noopener noreferrer"
+                   class="group hidden sm:inline-flex items-center gap-1.5 px-4 md:px-5 py-1.5 md:py-2 rounded-full border border-brand-text/20 hover:border-brand-accent bg-brand-text/[0.03] hover:bg-brand-accent text-brand-text hover:text-white text-xs md:text-sm font-semibold transition-all duration-300">
+                    <span>Iniciar Projeto</span>
+                    <i class="ph-bold ph-arrow-right text-xs group-hover:translate-x-0.5 transition-transform"></i>
+                </a>
+
+                <!-- Botão Menu Mobile -->
+                <button id="mobile-menu-btn" class="md:hidden p-1.5 text-brand-text hover:text-brand-accent transition-colors focus:outline-none" aria-label="Abrir Menu">
+                    <i class="ph-bold ph-list text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Gaveta Menu Mobile Flutuante Arredondada -->
+        <div id="mobile-menu" class="hidden md:hidden pt-4 pb-5 px-5 space-y-2.5 bg-brand-bg/95 backdrop-blur-2xl rounded-3xl border border-brand-text/15 mt-2.5 shadow-xl mx-auto w-full">
+            <a href="#inicio" class="block px-3.5 py-2 text-sm font-bold text-brand-text border-l-2 border-brand-accent rounded-r-lg bg-brand-accent/10">Início</a>
+            <a href="#portfolio" class="block px-3.5 py-2 text-sm font-semibold text-brand-text hover:text-brand-accent rounded-lg transition-colors">Portfólio</a>
+            <a href="#planos" class="block px-3.5 py-2 text-sm font-semibold text-brand-text hover:text-brand-accent rounded-lg transition-colors">Planos</a>
+            <a href="#contato" class="block px-3.5 py-2 text-sm font-semibold text-brand-text hover:text-brand-accent rounded-lg transition-colors">Contato</a>
+            <div class="pt-2">
+                <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer"
+                   class="btn-shimmer w-full flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-brand-accent text-white font-bold text-sm shadow-md">
+                    <i class="ph-bold ph-whatsapp-logo text-lg"></i>
+                    <span>Iniciar Projeto</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================================================= -->
+    <!-- HERO SECTION (PRIMEIRA SEÇÃO: ECOSSISTEMA DIGITAL & CRM INTEGRADO)         -->
+    <!-- ========================================================================= -->
+    <main class="relative z-10">
+        <section id="inicio" class="relative min-h-[92dvh] flex flex-col justify-center w-full pt-32 pb-14 lg:pt-36 lg:pb-20 overflow-hidden">
+            
+            <div class="max-w-7xl mx-auto px-6 w-full flex flex-col justify-between flex-1">
+                
+                <!-- Grid de 2 Colunas (Texto Persuasivo + Card Visual Profissional) -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center pt-2 md:pt-6">
+                    
+                    <!-- Coluna da Esquerda (Copywriting de Alta Conversão) -->
+                    <div class="lg:col-span-7 flex flex-col items-start text-left">
+                        
+                        <!-- Selo / Eyebrow Badge com indicador ativo -->
+                        <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-brand-card/90 backdrop-blur-sm border border-brand-border shadow-sm mb-6">
+                            <span class="w-2 h-2 rounded-full bg-brand-accent animate-pulse"></span>
+                            <span class="text-brand-accent text-xs font-bold uppercase tracking-[0.16em] font-sans">
+                                Ecossistema Digital para Crescimento de Negócios
+                            </span>
+                        </div>
+
+                        <!-- Headline Principal (H1) - Impactante e Assertiva -->
+                        <h1 class="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-extrabold text-brand-text tracking-tight leading-[1.15] mb-6">
+                            Infraestrutura digital para transformar cliques em <br class="hidden sm:block">
+                            <span class="relative inline-block text-brand-accent">
+                                clientes qualificados e vendas diárias.
+                                <svg class="absolute -bottom-1.5 left-0 w-full h-3 text-brand-accent/35" viewBox="0 0 100 20" preserveAspectRatio="none">
+                                    <path d="M0,15 Q50,0 100,15" stroke="currentColor" stroke-width="4" fill="transparent"/>
+                                </svg>
+                            </span>
+                        </h1>
+
+                        <!-- Subtítulo Estratégico -->
+                        <p class="text-base sm:text-lg text-brand-muted max-w-2xl mb-8 leading-relaxed font-normal">
+                            Chega de sites genéricos que não convertem. Construímos máquinas de vendas exclusivas, integrando sua Landing Page a um CRM próprio para centralizar a gestão de leads e garantir que nenhum contato do seu WhatsApp seja perdido pela sua equipe.
+                        </p>
+
+                        <!-- Ações / CTAs -->
+                        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 sm:gap-6 w-full sm:w-auto mb-10">
+                            <a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20iniciar%20meu%20ecossistema%20digital%20com%20CRM."
+                               target="_blank" rel="noopener noreferrer"
+                               class="btn-shimmer px-8 py-4 bg-brand-accent hover:bg-brand-accentDark text-white font-heading font-bold rounded-xl shadow-[0_8px_25px_rgba(184,146,106,0.35)] hover:shadow-[0_12px_32px_rgba(184,146,106,0.5)] transition-all hover:-translate-y-0.5 flex items-center justify-center gap-2.5 text-sm sm:text-base">
+                                <i class="ph-bold ph-whatsapp-logo text-xl"></i>
+                                <span>Construir Minha Máquina de Vendas</span>
+                            </a>
+
+                            <a href="#portfolio"
+                               class="group inline-flex items-center justify-center gap-2 text-brand-text hover:text-brand-accent text-sm md:text-base font-bold transition-all py-3 px-2">
+                                <span class="underline decoration-brand-text/30 group-hover:decoration-brand-accent underline-offset-8 transition-colors">
+                                    Ver Casos de Sucesso
+                                </span>
+                                <i class="ph-bold ph-arrow-up-right text-base group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+                            </a>
+                        </div>
+
+                        <!-- Mini Selos de Confiança Técnica & CRM -->
+                        <div class="flex flex-wrap items-center gap-4 sm:gap-6 text-xs text-brand-muted font-medium pt-2 border-t border-brand-border/60 w-full">
+                            <div class="flex items-center gap-1.5">
+                                <i class="ph-fill ph-funnel text-brand-accent text-base"></i>
+                                <span>Landing Page de <strong>Alta Conversão</strong></span>
+                            </div>
+                            <div class="flex items-center gap-1.5">
+                                <i class="ph-fill ph-kanban text-emerald-600 text-base"></i>
+                                <span>CRM Próprio <strong>Integrado</strong></span>
+                            </div>
+                            <div class="flex items-center gap-1.5">
+                                <i class="ph-fill ph-whatsapp-logo text-emerald-600 text-base"></i>
+                                <span>Gestão Centralizada de <strong>Leads no WhatsApp</strong></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Coluna da Direita (Fotografia Profissional + Floating Cards) -->
+                    <div class="lg:col-span-5 relative flex justify-center lg:justify-end">
+                        
+                        <!-- Glow Decorativo de Fundo -->
+                        <div class="absolute -inset-4 bg-gradient-to-tr from-brand-accent/20 to-transparent rounded-[2.5rem] blur-2xl -z-10"></div>
+                        
+                        <!-- Moldura Premium da Fotografia -->
+                        <div class="relative w-full max-w-[420px] bg-brand-card p-3 rounded-[2.5rem] shadow-[0_20px_50px_rgba(58,50,44,0.12)] border border-brand-border/70 group">
+                            
+                            <!-- Imagem Principal -->
+                            <div class="relative overflow-hidden rounded-[2rem] aspect-[4/5] bg-[#E8DDD4]">
+                                <img src="./img/dra-hero.jpg" 
+                                     alt="Especialista em Ecossistemas Digitais e Estrutura de Vendas" 
+                                     class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                                     loading="eager"
+                                     decoding="async">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+                                
+                                <!-- Legenda inferior na foto -->
+                                <div class="absolute bottom-3 left-4 right-4 text-white">
+                                    <p class="text-xs uppercase tracking-wider font-bold text-white/80">Infraestrutura Completa</p>
+                                    <p class="text-sm font-semibold leading-tight">Landing Page + CRM Próprio de Vendas</p>
+                                </div>
+                            </div>
+
+                            <!-- Card Flutuante 1: CRM & Gestão de Leads (Topo Esquerdo) -->
+                            <div class="absolute -top-4 -left-4 sm:-left-6 bg-brand-card/95 backdrop-blur-md p-3 sm:p-3.5 rounded-2xl border border-brand-border shadow-xl flex items-center gap-3 animate-pulse-slow max-w-[230px]">
+                                <div class="w-9 h-9 rounded-xl bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-600 shrink-0">
+                                    <i class="ph-bold ph-chat-teardrop-dots text-lg"></i>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] uppercase font-bold text-emerald-700 tracking-wider">CRM & Leads WhatsApp</p>
+                                    <p class="text-xs font-bold text-brand-text leading-tight">Zero contatos perdidos</p>
+                                </div>
+                            </div>
+
+                            <!-- Card Flutuante 2: Avaliação 5 Estrelas (Base Direita) -->
+                            <div class="absolute -bottom-5 -right-4 sm:-right-6 bg-brand-card/95 backdrop-blur-md p-3 sm:p-3.5 rounded-2xl border border-brand-border shadow-xl flex items-center gap-3 max-w-[220px]">
+                                <div class="w-9 h-9 rounded-xl bg-brand-accent/15 border border-brand-accent/30 flex items-center justify-center text-brand-accent shrink-0">
+                                    <i class="ph-fill ph-star text-lg"></i>
+                                </div>
+                                <div>
+                                    <div class="flex text-[#E5A93C] text-xs gap-0.5 mb-0.5">
+                                        <i class="ph-fill ph-star"></i>
+                                        <i class="ph-fill ph-star"></i>
+                                        <i class="ph-fill ph-star"></i>
+                                        <i class="ph-fill ph-star"></i>
+                                        <i class="ph-fill ph-star"></i>
+                                    </div>
+                                    <p class="text-[11px] font-bold text-brand-text leading-tight">5.0 Estrelas no Google</p>
+                                    <p class="text-[10px] text-brand-muted">+100 ecossistemas ativos</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Barra de Prova Social Inferior -->
+                <div class="mt-14 lg:mt-16 pt-6 border-t border-brand-border/60">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+
+                        <!-- Depoimento Resumido -->
+                        <div class="flex items-center gap-3 bg-brand-card/80 backdrop-blur-sm p-3 pr-5 rounded-2xl border border-brand-border/60 max-w-md">
+                            <div class="w-10 h-10 rounded-full bg-brand-accent text-white flex items-center justify-center font-bold text-xs shrink-0 shadow-sm">
+                                LP
+                            </div>
+                            <div class="min-w-0">
+                                <p class="text-xs sm:text-sm text-brand-text font-semibold leading-snug">
+                                    “Nosso volume de clientes triplicou em 30 dias com o novo site.”
+                                </p>
+                                <p class="text-[11px] text-brand-muted">Larissa P. · Gerente de Marketing e Growth</p>
+                            </div>
+                        </div>
+
+                        <!-- Métricas Rápidas -->
+                        <div class="flex items-center gap-6 sm:gap-10">
+                            <div>
+                                <p class="font-heading text-2xl font-extrabold text-brand-text">+120</p>
+                                <p class="text-xs text-brand-muted font-medium">Sites Entregues</p>
+                            </div>
+                            <div class="w-px h-8 bg-brand-border"></div>
+                            <div>
+                                <p class="font-heading text-2xl font-extrabold text-brand-text">100%</p>
+                                <p class="text-xs text-brand-muted font-medium">Design Exclusivo</p>
+                            </div>
+                            <div class="w-px h-8 bg-brand-border"></div>
+                            <div>
+                                <p class="font-heading text-2xl font-extrabold text-brand-accent">0,8s</p>
+                                <p class="text-xs text-brand-muted font-medium">Carregamento Rápido</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Indicador Animado de Rolagem (Scroll Indicator) -->
+            <div class="hidden xl:flex flex-col items-center absolute bottom-3 left-1/2 -translate-x-1/2 pointer-events-none gap-1 opacity-60">
+                <span class="text-[9px] uppercase font-bold tracking-widest text-brand-muted">Role para ver</span>
+                <div class="w-[2px] h-5 bg-brand-border overflow-hidden relative rounded-full">
+                    <div class="w-full h-full bg-brand-accent animate-scroll-line"></div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ========================================================================= -->
+        <!-- MARQUEE TICKER (FAIXA DINÂMICA DE BENEFÍCIOS TÉCNICOS)                    -->
+        <!-- ========================================================================= -->
+        <div class="w-full bg-brand-card border-y border-brand-border py-4 overflow-hidden shadow-sm relative z-20">
+            <div class="flex w-max animate-marquee space-x-8 items-center text-xs sm:text-sm md:text-base font-heading font-extrabold uppercase tracking-wider">
+                
+                <!-- Conjunto 1 -->
+                <span class="text-brand-text">✦ Design 100% Exclusivo</span>
+                <span class="marquee-outline">✦ Carregamento Ultra Rápido</span>
+                <span class="text-brand-accent">✦ Otimizado para SEO & Google</span>
+                <span class="marquee-outline">✦ Alta Taxa de Conversão</span>
+                <span class="text-brand-text">✦ Totalmente Responsivo</span>
+                <span class="marquee-outline">✦ Painel Amigável de Edição</span>
+                <span class="text-brand-accent">✦ Segurança SSL & Código Limpo</span>
+
+                <!-- Conjunto 2 (Duplicado para loop contínuo sem emendas) -->
+                <span class="text-brand-text">✦ Design 100% Exclusivo</span>
+                <span class="marquee-outline">✦ Carregamento Ultra Rápido</span>
+                <span class="text-brand-accent">✦ Otimizado para SEO & Google</span>
+                <span class="marquee-outline">✦ Alta Taxa de Conversão</span>
+                <span class="text-brand-text">✦ Totalmente Responsivo</span>
+                <span class="marquee-outline">✦ Painel Amigável de Edição</span>
+                <span class="text-brand-accent">✦ Segurança SSL & Código Limpo</span>
+                
+            </div>
+        </div>
+    </main>
+
+    <!-- Script para controle interativo básico -->
+    <script>
+        // Transição sutil do cabeçalho em pílula no scroll
+        const headerPill = document.querySelector('header > div:first-child');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 30) {
+                headerPill.classList.add('shadow-[0_8px_30px_rgba(58,50,44,0.06)]', 'bg-white/40');
+                headerPill.classList.remove('bg-white/20');
+            } else {
+                headerPill.classList.remove('shadow-[0_8px_30px_rgba(58,50,44,0.06)]', 'bg-white/40');
+                headerPill.classList.add('bg-white/20');
+            }
+        });
+
+        // Toggle Menu Mobile
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Fechar menu ao clicar em links
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
