@@ -4,12 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criação de Sites de Alta Conversão & Landing Pages Exclusivas</title>
+    <title>Estúdio 18 Digital | Sites de Alta Conversão & Infraestrutura de Vendas</title>
 
     <meta name="description"
-        content="Desenvolvemos sites exclusivos e landing pages de alta conversão do zero. Design premium, velocidade máxima e estratégias focadas em vendas.">
-    <meta name="keywords" content="criação de sites, landing pages, web design premium, desenvolvimento web, sites de alta conversão">
+        content="Estúdio 18 Digital: Desenvolvemos sites exclusivos, landing pages de alta conversão do zero e ecossistemas digitais com CRM integrado para maximizar suas vendas.">
+    <meta name="keywords" content="Estúdio 18 Digital, criação de sites, landing pages, web design premium, desenvolvimento web, sites de alta conversão, CRM WhatsApp">
     <meta name="theme-color" content="#F4EAE3">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://estudio18digital.com.br/">
+
+    <!-- Open Graph / Meta Tags para WhatsApp, Instagram e Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://estudio18digital.com.br/">
+    <meta property="og:title" content="Estúdio 18 Digital | Sites de Alta Conversão & Infraestrutura de Vendas">
+    <meta property="og:description" content="Desenvolvemos sites exclusivos, landing pages de alta conversão e ecossistemas digitais com CRM integrado para maximizar suas vendas.">
+    <meta property="og:image" content="./img/logo-18.png">
+    <meta property="og:site_name" content="Estúdio 18 Digital">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Estúdio 18 Digital | Sites de Alta Conversão">
+    <meta name="twitter:description" content="Landing pages de alta conversão, CRM Kanban para WhatsApp e ecossistemas digitais escaláveis.">
+    <meta name="twitter:image" content="./img/logo-18.png">
+
+    <!-- Schema.org JSON-LD: Estrutura de Dados Rica para Google Search e Google Ads -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Estúdio 18 Digital",
+      "image": "./img/logo-18.png",
+      "description": "Desenvolvimento de Landing Pages de alta conversão, sites institucionais e ecossistemas com CRM integrado.",
+      "url": "https://estudio18digital.com.br",
+      "telephone": "+5512991525876",
+      "email": "contato@estudio18digital.com.br",
+      "priceRange": "R$ 800 - R$ 1500",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "BR"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "19:00"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Serviços de Infraestrutura Digital",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Plano Presença - Landing Page & Manutenção"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Plano Conversão - Landing Page + CRM WhatsApp Integrado"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Plano Growth - Ecossistema Digital & Tráfego Pago"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./img/logo-18.png">
 
     <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -104,6 +176,15 @@
             -webkit-text-stroke: 1px #3A322C;
         }
 
+        /* Ocultar barra de rolagem mantendo a navegação e arraste fluidos */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
         /* Suavização de renderização de fontes */
         body {
             background-color: #F4EAE3;
@@ -127,11 +208,15 @@
     <!-- HEADER / NAVEGAÇÃO EM PÍLULA FLUTUANTE ARREDONDADA ULTRA TRANSLÚCIDA        -->
     <!-- ========================================================================= -->
     <header class="fixed top-4 md:top-6 left-1/2 -translate-x-1/2 w-[94%] max-w-5xl z-50 transition-all duration-300">
-        <div class="w-full bg-white/20 hover:bg-white/30 backdrop-blur-md border border-brand-text/10 rounded-full px-5 md:px-7 py-2 md:py-2.5 flex items-center justify-between shadow-[0_4px_20px_rgba(58,50,44,0.03)] transition-all duration-300">
+        <div class="w-full bg-white/40 hover:bg-white/50 backdrop-blur-md border border-brand-text/10 rounded-full px-4 sm:px-6 md:px-7 py-2 md:py-2.5 flex items-center justify-between shadow-[0_4px_20px_rgba(58,50,44,0.04)] transition-all duration-300">
             
-            <!-- Logotipo Estilo <Studio -->
-            <a href="#inicio" class="text-lg md:text-xl font-bold font-sans tracking-tight text-brand-text flex items-center gap-0.5 group shrink-0">
-                <span class="text-brand-accent font-mono font-medium text-lg">&lt;</span><span class="font-extrabold tracking-tight">Studio</span>
+            <!-- Logotipo Estúdio 18 Digital -->
+            <a href="#inicio" class="flex items-center gap-2.5 group shrink-0">
+                <img src="./img/logo-18.png" alt="Estúdio 18 Digital" class="h-9 md:h-10 w-auto object-contain drop-shadow-sm group-hover:scale-105 transition-transform">
+                <div class="flex flex-col leading-none">
+                    <span class="font-heading font-extrabold text-sm md:text-[15px] tracking-tight text-brand-text group-hover:text-brand-accent transition-colors">ESTÚDIO 18</span>
+                    <span class="text-[8.5px] uppercase tracking-[0.18em] font-bold text-brand-muted">DIGITAL</span>
+                </div>
             </a>
 
             <!-- Menu de Links Centralizado (Desktop) -->
@@ -144,7 +229,7 @@
 
             <!-- CTA Estilo Pílula com Seta -->
             <div class="flex items-center gap-2 shrink-0">
-                <a href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20iniciar%20um%20projeto."
+                <a href="https://wa.me/5512991525876?text=Olá!%20Gostaria%20de%20iniciar%20um%20projeto."
                    target="_blank" rel="noopener noreferrer"
                    class="group hidden sm:inline-flex items-center gap-1.5 px-4 md:px-5 py-1.5 md:py-2 rounded-full border border-brand-text/20 hover:border-brand-accent bg-brand-text/[0.03] hover:bg-brand-accent text-brand-text hover:text-white text-xs md:text-sm font-semibold transition-all duration-300">
                     <span>Iniciar Projeto</span>
@@ -165,7 +250,7 @@
             <a href="#planos" class="block px-3.5 py-2 text-sm font-semibold text-brand-text hover:text-brand-accent rounded-lg transition-colors">Planos</a>
             <a href="#contato" class="block px-3.5 py-2 text-sm font-semibold text-brand-text hover:text-brand-accent rounded-lg transition-colors">Contato</a>
             <div class="pt-2">
-                <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer"
+                <a href="https://wa.me/5512991525876" target="_blank" rel="noopener noreferrer"
                    class="btn-shimmer w-full flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-brand-accent text-white font-bold text-sm shadow-md">
                     <i class="ph-bold ph-whatsapp-logo text-lg"></i>
                     <span>Iniciar Projeto</span>
@@ -214,7 +299,7 @@
 
                         <!-- Ações / CTAs -->
                         <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 sm:gap-6 w-full sm:w-auto mb-10">
-                            <a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20iniciar%20meu%20ecossistema%20digital%20com%20CRM."
+                            <a href="https://wa.me/5512991525876?text=Ol%C3%A1!%20Gostaria%20de%20iniciar%20meu%20ecossistema%20digital%20com%20CRM."
                                target="_blank" rel="noopener noreferrer"
                                class="btn-shimmer px-8 py-4 bg-brand-accent hover:bg-brand-accentDark text-white font-heading font-bold rounded-xl shadow-[0_8px_25px_rgba(184,146,106,0.35)] hover:shadow-[0_12px_32px_rgba(184,146,106,0.5)] transition-all hover:-translate-y-0.5 flex items-center justify-center gap-2.5 text-sm sm:text-base">
                                 <i class="ph-bold ph-whatsapp-logo text-xl"></i>
@@ -384,9 +469,1188 @@
                 
             </div>
         </div>
+
+        <!-- ========================================================================= -->
+        <!-- SEÇÃO DE PORTFÓLIO & CASOS DE SUCESSO                                    -->
+        <!-- ========================================================================= -->
+        <section id="portfolio" class="relative py-20 lg:py-28 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6 w-full">
+                
+                <!-- Cabeçalho da Seção -->
+                <div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-12 lg:mb-16">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-card border border-brand-border shadow-sm mb-4">
+                        <i class="ph-bold ph-sparkle text-brand-accent text-sm"></i>
+                        <span class="text-brand-accent text-xs font-bold uppercase tracking-[0.16em] font-sans">
+                            Portfólio Selecionado
+                        </span>
+                    </div>
+
+                    <h2 class="font-heading text-3xl sm:text-4xl md:text-5xl font-extrabold text-brand-text tracking-tight leading-[1.18] mb-5">
+                        Projetos desenhados para transformar cliques em <span class="text-brand-accent">vendas reais</span>
+                    </h2>
+
+                    <p class="text-base sm:text-lg text-brand-muted leading-relaxed">
+                        Cada projeto é desenvolvido do zero, combinando psicologia de vendas, design exclusivo e velocidade extrema para gerar o máximo de resultados para cada segmento.
+                    </p>
+
+                    <!-- Filtros por Categoria Interativos -->
+                    <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mt-8 p-1.5 bg-brand-card/70 backdrop-blur-md rounded-2xl border border-brand-border/80 shadow-sm" id="portfolio-filters">
+                        <button type="button" data-filter="all" class="portfolio-filter-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 bg-brand-text text-white shadow-sm">
+                            Todos os Projetos
+                        </button>
+                        <button type="button" data-filter="clinica" class="portfolio-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-brand-muted hover:text-brand-text hover:bg-brand-bg/80 transition-all duration-200">
+                            Clínicas & Especialidades
+                        </button>
+                        <button type="button" data-filter="medico" class="portfolio-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-brand-muted hover:text-brand-text hover:bg-brand-bg/80 transition-all duration-200">
+                            Médicos & Consultórios
+                        </button>
+                        <button type="button" data-filter="crm" class="portfolio-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-brand-muted hover:text-brand-text hover:bg-brand-bg/80 transition-all duration-200">
+                            Com CRM Integrado
+                        </button>
+                    </div>
+
+                    <!-- Controles de Navegação do Carrossel (Setas) -->
+                    <div class="flex items-center justify-center gap-3 mt-6">
+                        <button type="button" id="portfolio-prev-btn" aria-label="Projeto anterior"
+                                class="w-10 h-10 rounded-full bg-brand-card hover:bg-white text-brand-text hover:text-brand-accent border border-brand-border shadow-sm flex items-center justify-center transition-all duration-200 hover:scale-105 active:scale-95 disabled:opacity-30 disabled:cursor-not-allowed">
+                            <i class="ph-bold ph-caret-left text-lg"></i>
+                        </button>
+                        <span class="text-xs text-brand-muted font-semibold tracking-wider uppercase">Arraste ou use as setas</span>
+                        <button type="button" id="portfolio-next-btn" aria-label="Próximo projeto"
+                                class="w-10 h-10 rounded-full bg-brand-card hover:bg-white text-brand-text hover:text-brand-accent border border-brand-border shadow-sm flex items-center justify-center transition-all duration-200 hover:scale-105 active:scale-95 disabled:opacity-30 disabled:cursor-not-allowed">
+                            <i class="ph-bold ph-caret-right text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Trilho Horizontal de Portfólio (Estilo Netflix / Single Row) -->
+                <div class="relative group/carousel">
+                    
+                    <!-- Seta Flutuante Esquerda (Desktop) -->
+                    <button type="button" id="floating-prev-btn" aria-label="Rolar para esquerda"
+                            class="hidden md:flex absolute -left-4 top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full bg-brand-card/95 hover:bg-white text-brand-text hover:text-brand-accent border border-brand-border shadow-xl items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95 opacity-0 group-hover/carousel:opacity-100 backdrop-blur-md">
+                        <i class="ph-bold ph-caret-left text-xl"></i>
+                    </button>
+
+                    <!-- Seta Flutuante Direita (Desktop) -->
+                    <button type="button" id="floating-next-btn" aria-label="Rolar para direita"
+                            class="hidden md:flex absolute -right-4 top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full bg-brand-card/95 hover:bg-white text-brand-text hover:text-brand-accent border border-brand-border shadow-xl items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95 opacity-0 group-hover/carousel:opacity-100 backdrop-blur-md">
+                        <i class="ph-bold ph-caret-right text-xl"></i>
+                    </button>
+
+                    <!-- Container do Carrossel em Linha Única -->
+                    <div class="flex items-stretch gap-6 overflow-x-auto scroll-smooth py-4 px-1 hide-scrollbar cursor-grab active:cursor-grabbing select-none" id="portfolio-track">
+                        
+                        <!-- Projeto 1: UNIC -->
+                        <article class="portfolio-item w-[310px] sm:w-[370px] md:w-[390px] shrink-0 group bg-brand-card rounded-3xl overflow-hidden border border-brand-border/70 shadow-[0_10px_30px_rgba(58,50,44,0.04)] hover:shadow-[0_20px_40px_rgba(58,50,44,0.09)] transition-all duration-300 flex flex-col hover:-translate-y-1.5" data-category="clinica crm">
+                            <div class="relative overflow-hidden aspect-[16/10] bg-[#ECE2D8]">
+                                <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=900&q=80" 
+                                     alt="Projeto Unic desenvolvido pelo Estúdio 18 Digital" 
+                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 pointer-events-none"
+                                     loading="lazy">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-text/70 via-brand-text/20 to-transparent opacity-85 group-hover:opacity-95 transition-opacity"></div>
+                                
+                                <!-- Badges Superiores -->
+                                <div class="absolute top-3.5 left-3.5 flex items-center gap-2">
+                                    <span class="px-2.5 py-1 rounded-full bg-brand-card/90 backdrop-blur-md text-[11px] font-bold text-brand-accent border border-brand-border shadow-sm">
+                                        Clínica & Especialidades
+                                    </span>
+                                </div>
+                                <div class="absolute top-3.5 right-3.5">
+                                    <span class="px-2.5 py-1 rounded-full bg-emerald-600/90 backdrop-blur-md text-[11px] font-bold text-white shadow-sm flex items-center gap-1">
+                                        <i class="ph-bold ph-trend-up"></i> +310% Conversão
+                                    </span>
+                                </div>
+
+                                <!-- Legenda Inferior -->
+                                <div class="absolute bottom-3 left-4 right-4 text-white">
+                                    <p class="text-xs uppercase tracking-wider font-bold text-amber-200">Projeto Oficial</p>
+                                    <p class="text-sm font-bold truncate">Unic — Saúde Integrada & Alta Performance</p>
+                                </div>
+                            </div>
+
+                            <div class="p-6 flex-1 flex flex-col justify-between">
+                                <div>
+                                    <h3 class="font-heading text-xl font-extrabold text-brand-text group-hover:text-brand-accent transition-colors mb-2.5">
+                                        Unic
+                                    </h3>
+                                    <p class="text-sm text-brand-muted leading-relaxed mb-4">
+                                        Estrutura completa desenvolvida para posicionamento de autoridade, captação acelerada de pacientes qualificados e agendamento direto pelo WhatsApp.
+                                    </p>
+
+                                    <div class="flex flex-wrap gap-1.5 mb-6">
+                                        <span class="px-2.5 py-1 bg-brand-bg rounded-lg text-xs font-medium text-brand-text/80">Funil WhatsApp</span>
+                                        <span class="px-2.5 py-1 bg-brand-bg rounded-lg text-xs font-medium text-brand-text/80">0.6s Velocidade</span>
+                                        <span class="px-2.5 py-1 bg-brand-bg rounded-lg text-xs font-medium text-brand-text/80">CRM de Leads</span>
+                                    </div>
+                                </div>
+
+                                <div class="pt-4 border-t border-brand-border/60 flex items-center justify-between">
+                                    <span class="text-xs text-brand-muted font-semibold">Infraestrutura Exclusiva</span>
+                                    <a href="https://wa.me/5512991525876?text=Ol%C3%A1!%20Gostei%20do%20projeto%20da%20Unic%20e%20gostaria%20de%20algo%20semelhante."
+                                       target="_blank" rel="noopener noreferrer"
+                                       class="inline-flex items-center gap-1.5 text-xs font-bold text-brand-accent hover:text-brand-accentDark transition-colors">
+                                        <span>Quero similar</span>
+                                        <i class="ph-bold ph-arrow-up-right text-xs"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Projeto 2: DR. MENDROT -->
+                        <article class="portfolio-item w-[310px] sm:w-[370px] md:w-[390px] shrink-0 group bg-brand-card rounded-3xl overflow-hidden border border-brand-border/70 shadow-[0_10px_30px_rgba(58,50,44,0.04)] hover:shadow-[0_20px_40px_rgba(58,50,44,0.09)] transition-all duration-300 flex flex-col hover:-translate-y-1.5" data-category="medico crm">
+                            <div class="relative overflow-hidden aspect-[16/10] bg-[#ECE2D8]">
+                                <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=900&q=80" 
+                                     alt="Projeto Dr. Mendrot desenvolvido pelo Estúdio 18 Digital" 
+                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 pointer-events-none"
+                                     loading="lazy">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-text/70 via-brand-text/20 to-transparent opacity-85 group-hover:opacity-95 transition-opacity"></div>
+                                
+                                <div class="absolute top-3.5 left-3.5 flex items-center gap-2">
+                                    <span class="px-2.5 py-1 rounded-full bg-brand-card/90 backdrop-blur-md text-[11px] font-bold text-brand-accent border border-brand-border shadow-sm">
+                                        Medicina Especializada
+                                    </span>
+                                </div>
+                                <div class="absolute top-3.5 right-3.5">
+                                    <span class="px-2.5 py-1 rounded-full bg-emerald-600/90 backdrop-blur-md text-[11px] font-bold text-white shadow-sm flex items-center gap-1">
+                                        <i class="ph-bold ph-star-fill text-amber-200"></i> Agenda Lotada 5★
+                                    </span>
+                                </div>
+
+                                <div class="absolute bottom-3 left-4 right-4 text-white">
+                                    <p class="text-xs uppercase tracking-wider font-bold text-amber-200">Projeto Oficial</p>
+                                    <p class="text-sm font-bold truncate">Dr. Mendrot — Excelência & Tratamentos Avançados</p>
+                                </div>
+                            </div>
+
+                            <div class="p-6 flex-1 flex flex-col justify-between">
+                                <div>
+                                    <h3 class="font-heading text-xl font-extrabold text-brand-text group-hover:text-brand-accent transition-colors mb-2.5">
+                                        Dr. Mendrot
+                                    </h3>
+                                    <p class="text-sm text-brand-muted leading-relaxed mb-4">
+                                        Landing Page cirúrgica e persuasiva estruturada para procedimentos de alto ticket, prova social de pacientes e conversão imediata para a recepção.
+                                    </p>
+
+                                    <div class="flex flex-wrap gap-1.5 mb-6">
+                                        <span class="px-2.5 py-1 bg-brand-bg rounded-lg text-xs font-medium text-brand-text/80">Google Ads Ready</span>
+                                        <span class="px-2.5 py-1 bg-brand-bg rounded-lg text-xs font-medium text-brand-text/80">Pixel & Tracking</span>
+                                        <span class="px-2.5 py-1 bg-brand-bg rounded-lg text-xs font-medium text-brand-text/80">CRM de Leads</span>
+                                    </div>
+                                </div>
+
+                                <div class="pt-4 border-t border-brand-border/60 flex items-center justify-between">
+                                    <span class="text-xs text-brand-muted font-semibold">Landing Page de Especialista</span>
+                                    <a href="https://wa.me/5512991525876?text=Ol%C3%A1!%20Gostei%20do%20projeto%20do%20Dr.%20Mendrot%20e%20quero%20uma%20estrutura%20para%20meu%20consult%C3%B3rio."
+                                       target="_blank" rel="noopener noreferrer"
+                                       class="inline-flex items-center gap-1.5 text-xs font-bold text-brand-accent hover:text-brand-accentDark transition-colors">
+                                        <span>Quero similar</span>
+                                        <i class="ph-bold ph-arrow-up-right text-xs"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Projeto 3: DR. PEDRO -->
+                        <article class="portfolio-item w-[310px] sm:w-[370px] md:w-[390px] shrink-0 group bg-brand-card rounded-3xl overflow-hidden border border-brand-border/70 shadow-[0_10px_30px_rgba(58,50,44,0.04)] hover:shadow-[0_20px_40px_rgba(58,50,44,0.09)] transition-all duration-300 flex flex-col hover:-translate-y-1.5" data-category="medico clinica crm">
+                            <div class="relative overflow-hidden aspect-[16/10] bg-[#ECE2D8]">
+                                <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=900&q=80" 
+                                     alt="Projeto Dr. Pedro desenvolvido pelo Estúdio 18 Digital" 
+                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 pointer-events-none"
+                                     loading="lazy">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-text/70 via-brand-text/20 to-transparent opacity-85 group-hover:opacity-95 transition-opacity"></div>
+                                
+                                <div class="absolute top-3.5 left-3.5 flex items-center gap-2">
+                                    <span class="px-2.5 py-1 rounded-full bg-brand-card/90 backdrop-blur-md text-[11px] font-bold text-brand-accent border border-brand-border shadow-sm">
+                                        Saúde & Alta Conversão
+                                    </span>
+                                </div>
+                                <div class="absolute top-3.5 right-3.5">
+                                    <span class="px-2.5 py-1 rounded-full bg-emerald-600/90 backdrop-blur-md text-[11px] font-bold text-white shadow-sm flex items-center gap-1">
+                                        <i class="ph-bold ph-lightning"></i> +240% Contatos
+                                    </span>
+                                </div>
+
+                                <div class="absolute bottom-3 left-4 right-4 text-white">
+                                    <p class="text-xs uppercase tracking-wider font-bold text-amber-200">Projeto Oficial</p>
+                                    <p class="text-sm font-bold truncate">Dr. Pedro — Atendimento Médico Humanizado</p>
+                                </div>
+                            </div>
+
+                            <div class="p-6 flex-1 flex flex-col justify-between">
+                                <div>
+                                    <h3 class="font-heading text-xl font-extrabold text-brand-text group-hover:text-brand-accent transition-colors mb-2.5">
+                                        Dr. Pedro
+                                    </h3>
+                                    <p class="text-sm text-brand-muted leading-relaxed mb-4">
+                                        Posicionamento digital sofisticado com quebra de objeções, autoridade clínica e integração ao CRM para não perder nenhum contato de paciente.
+                                    </p>
+
+                                    <div class="flex flex-wrap gap-1.5 mb-6">
+                                        <span class="px-2.5 py-1 bg-brand-bg rounded-lg text-xs font-medium text-brand-text/80">Mobile First</span>
+                                        <span class="px-2.5 py-1 bg-brand-bg rounded-lg text-xs font-medium text-brand-text/80">Copy Persuasiva</span>
+                                        <span class="px-2.5 py-1 bg-brand-bg rounded-lg text-xs font-medium text-brand-text/80">CRM Kanban</span>
+                                    </div>
+                                </div>
+
+                                <div class="pt-4 border-t border-brand-border/60 flex items-center justify-between">
+                                    <span class="text-xs text-brand-muted font-semibold">Landing Page Premium</span>
+                                    <a href="https://wa.me/5512991525876?text=Ol%C3%A1!%20Gostei%20do%20projeto%20do%20Dr.%20Pedro%20e%20gostaria%20de%20uma%20p%C3%A1gina%20para%20minha%20cl%C3%ADnica."
+                                       target="_blank" rel="noopener noreferrer"
+                                       class="inline-flex items-center gap-1.5 text-xs font-bold text-brand-accent hover:text-brand-accentDark transition-colors">
+                                        <span>Quero similar</span>
+                                        <i class="ph-bold ph-arrow-up-right text-xs"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Projeto 4: DR. ANDRÉ -->
+                        <article class="portfolio-item w-[310px] sm:w-[370px] md:w-[390px] shrink-0 group bg-brand-card rounded-3xl overflow-hidden border border-brand-border/70 shadow-[0_10px_30px_rgba(58,50,44,0.04)] hover:shadow-[0_20px_40px_rgba(58,50,44,0.09)] transition-all duration-300 flex flex-col hover:-translate-y-1.5" data-category="medico clinica">
+                            <div class="relative overflow-hidden aspect-[16/10] bg-[#ECE2D8]">
+                                <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=900&q=80" 
+                                     alt="Projeto Dr. André desenvolvido pelo Estúdio 18 Digital" 
+                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 pointer-events-none"
+                                     loading="lazy">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-text/70 via-brand-text/20 to-transparent opacity-85 group-hover:opacity-95 transition-opacity"></div>
+                                
+                                <div class="absolute top-3.5 left-3.5 flex items-center gap-2">
+                                    <span class="px-2.5 py-1 rounded-full bg-brand-card/90 backdrop-blur-md text-[11px] font-bold text-brand-accent border border-brand-border shadow-sm">
+                                        Medicina & Performance
+                                    </span>
+                                </div>
+                                <div class="absolute top-3.5 right-3.5">
+                                    <span class="px-2.5 py-1 rounded-full bg-emerald-600/90 backdrop-blur-md text-[11px] font-bold text-white shadow-sm flex items-center gap-1">
+                                        <i class="ph-bold ph-check-circle"></i> Rastreamento 100%
+                                    </span>
+                                </div>
+
+                                <div class="absolute bottom-3 left-4 right-4 text-white">
+                                    <p class="text-xs uppercase tracking-wider font-bold text-amber-200">Projeto Oficial</p>
+                                    <p class="text-sm font-bold truncate">Dr. André — Precisão & Resultados Clínicos</p>
+                                </div>
+                            </div>
+
+                            <div class="p-6 flex-1 flex flex-col justify-between">
+                                <div>
+                                    <h3 class="font-heading text-xl font-extrabold text-brand-text group-hover:text-brand-accent transition-colors mb-2.5">
+                                        Dr. André
+                                    </h3>
+                                    <p class="text-sm text-brand-muted leading-relaxed mb-4">
+                                        Landing page de velocidade extrema com arquitetura de conversão sob medida para campanhas no Meta Ads e Google Ads de alta rentabilidade.
+                                    </p>
+
+                                    <div class="flex flex-wrap gap-1.5 mb-6">
+                                        <span class="px-2.5 py-1 bg-brand-bg rounded-lg text-xs font-medium text-brand-text/80">Meta Ads</span>
+                                        <span class="px-2.5 py-1 bg-brand-bg rounded-lg text-xs font-medium text-brand-text/80">Google Tag Manager</span>
+                                        <span class="px-2.5 py-1 bg-brand-bg rounded-lg text-xs font-medium text-brand-text/80">Agendamento Rápido</span>
+                                    </div>
+                                </div>
+
+                                <div class="pt-4 border-t border-brand-border/60 flex items-center justify-between">
+                                    <span class="text-xs text-brand-muted font-semibold">Landing Page de Alta Conversão</span>
+                                    <a href="https://wa.me/5512991525876?text=Ol%C3%A1!%20Gostei%20do%20projeto%20do%20Dr.%20Andr%C3%A9%20e%20quero%20uma%20estrutura%20para%20minha%20cl%C3%ADnica."
+                                       target="_blank" rel="noopener noreferrer"
+                                       class="inline-flex items-center gap-1.5 text-xs font-bold text-brand-accent hover:text-brand-accentDark transition-colors">
+                                        <span>Quero similar</span>
+                                        <i class="ph-bold ph-arrow-up-right text-xs"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+
+                </div>
+
+                <!-- Banner CTA no Rodapé da Seção de Portfólio -->
+                <div class="mt-14 lg:mt-20 p-8 sm:p-12 rounded-3xl bg-brand-card border border-brand-border/80 shadow-[0_15px_40px_rgba(58,50,44,0.06)] relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8">
+                    <!-- Glow de fundo sutil -->
+                    <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-brand-accent/15 rounded-full blur-3xl pointer-events-none"></div>
+                    
+                    <div class="max-w-xl text-center md:text-left relative z-10">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-bg text-brand-accent text-xs font-bold uppercase tracking-wider mb-3">
+                            <i class="ph-bold ph-rocket-launch"></i> Pronto para crescer?
+                        </div>
+                        <h3 class="font-heading text-2xl sm:text-3xl font-extrabold text-brand-text mb-2">
+                            Quer ver o seu negócio em destaque com uma estrutura como essa?
+                        </h3>
+                        <p class="text-sm sm:text-base text-brand-muted">
+                            Criamos um projeto 100% exclusivo para sua empresa, com foco total no seu cliente ideal e aumento de faturamento.
+                        </p>
+                    </div>
+
+                    <div class="shrink-0 relative z-10 w-full sm:w-auto">
+                        <a href="https://wa.me/5512991525876?text=Ol%C3%A1!%20Vi%20o%20portf%C3%B3lio%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20meu%20projeto."
+                           target="_blank" rel="noopener noreferrer"
+                           class="btn-shimmer w-full sm:w-auto px-8 py-4 bg-brand-accent hover:bg-brand-accentDark text-white font-heading font-bold rounded-xl shadow-[0_8px_25px_rgba(184,146,106,0.35)] hover:shadow-[0_12px_32px_rgba(184,146,106,0.5)] transition-all flex items-center justify-center gap-2.5 text-sm sm:text-base">
+                            <i class="ph-bold ph-whatsapp-logo text-xl"></i>
+                            <span>Solicitar Orçamento Personalizado</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========================================================================= -->
+        <!-- SEÇÃO DE PLANOS, PREÇOS & PACOTES DE SERVIÇO                              -->
+        <!-- ========================================================================= -->
+        <section id="planos" class="relative py-20 lg:py-28 overflow-hidden bg-brand-card/40 border-t border-brand-border/60">
+            <div class="max-w-7xl mx-auto px-6 w-full">
+                
+                <!-- Cabeçalho da Seção -->
+                <div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-14 lg:mb-20">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-card border border-brand-border shadow-sm mb-4">
+                        <i class="ph-bold ph-lightning text-brand-accent text-sm"></i>
+                        <span class="text-brand-accent text-xs font-bold uppercase tracking-[0.16em] font-sans">
+                            Estrutura de Investimento Transparente
+                        </span>
+                    </div>
+
+                    <h2 class="font-heading text-3xl sm:text-4xl md:text-5xl font-extrabold text-brand-text tracking-tight leading-[1.18] mb-5">
+                        Planos oficiais do <span class="text-brand-accent">Estúdio 18 Digital</span>
+                    </h2>
+
+                    <p class="text-base sm:text-lg text-brand-muted leading-relaxed">
+                        Setup de infraestrutura de alta conversão combinado a suporte técnico preventivo e licenciamento do nosso CRM proprietário para vendas diárias.
+                    </p>
+                </div>
+
+                <!-- Grid dos 3 Cards de Planos -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch relative">
+                    
+                    <!-- Plano 1: Plano Presença -->
+                    <div class="bg-brand-card rounded-3xl p-8 border border-brand-border shadow-[0_10px_30px_rgba(58,50,44,0.03)] flex flex-col justify-between hover:border-brand-accent/40 transition-all duration-300">
+                        <div>
+                            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-bg text-brand-muted text-xs font-bold uppercase tracking-wider mb-4">
+                                Presença & Validação
+                            </div>
+                            <h3 class="font-heading text-2xl font-extrabold text-brand-text mb-2">
+                                Plano Presença
+                            </h3>
+                            <p class="text-xs sm:text-sm text-brand-muted mb-6 leading-relaxed">
+                                Ideal para profissionais liberais, serviços e campanhas diretas que precisam de uma Landing Page com estabilidade e manutenção contínua.
+                            </p>
+
+                            <!-- Bloco de Preços -->
+                            <div class="mb-6 pb-6 border-b border-brand-border/60 space-y-3">
+                                <div>
+                                    <span class="text-[11px] font-bold text-brand-muted uppercase tracking-wider">1. Setup de Infraestrutura (Único)</span>
+                                    <div class="flex items-baseline gap-1 mt-0.5">
+                                        <span class="text-xs font-bold text-brand-text">R$</span>
+                                        <span class="font-heading text-2xl sm:text-3xl font-extrabold text-brand-text">800</span>
+                                        <span class="text-xs text-brand-muted font-normal">a</span>
+                                        <span class="text-xs font-bold text-brand-text">R$</span>
+                                        <span class="font-heading text-2xl sm:text-3xl font-extrabold text-brand-text">1.500</span>
+                                    </div>
+                                    <p class="text-[11px] text-brand-muted mt-0.5">Condição: 50% fechamento / 50% aprovação</p>
+                                </div>
+
+                                <div class="pt-2 border-t border-dashed border-brand-border/60">
+                                    <span class="text-[11px] font-bold text-brand-muted uppercase tracking-wider">2. Infraestrutura & Manutenção</span>
+                                    <div class="flex items-baseline gap-1 mt-0.5">
+                                        <span class="text-base font-bold text-brand-accent">+ R$</span>
+                                        <span class="font-heading text-2xl font-extrabold text-brand-accent">50</span>
+                                        <span class="text-xs text-brand-muted font-medium">/mês</span>
+                                    </div>
+                                    <p class="text-[11px] text-brand-muted">Servidor, domínio, segurança & SLA de alterações</p>
+                                </div>
+                            </div>
+
+                            <!-- Lista de Entregas -->
+                            <div class="space-y-3 mb-8">
+                                <p class="text-xs font-bold uppercase tracking-wider text-brand-text mb-2">O que está incluso:</p>
+                                
+                                <div class="flex items-start gap-2.5 text-xs sm:text-sm text-brand-text/90">
+                                    <i class="ph-bold ph-check text-emerald-600 text-base shrink-0 mt-0.5"></i>
+                                    <span>Landing Page de Alta Conversão sob medida</span>
+                                </div>
+                                <div class="flex items-start gap-2.5 text-xs sm:text-sm text-brand-text/90">
+                                    <i class="ph-bold ph-check text-emerald-600 text-base shrink-0 mt-0.5"></i>
+                                    <span>Copywriting persuasivo e arquitetura de vendas</span>
+                                </div>
+                                <div class="flex items-start gap-2.5 text-xs sm:text-sm text-brand-text/90">
+                                    <i class="ph-bold ph-check text-emerald-600 text-base shrink-0 mt-0.5"></i>
+                                    <span>Carregamento ultrarrápido (&lt; 0.8s) & Mobile First</span>
+                                </div>
+                                <div class="flex items-start gap-2.5 text-xs sm:text-sm text-brand-text/90">
+                                    <i class="ph-bold ph-check text-emerald-600 text-base shrink-0 mt-0.5"></i>
+                                    <span>Custos de servidor & renovação de domínio inclusos</span>
+                                </div>
+                                <div class="flex items-start gap-2.5 text-xs sm:text-sm text-brand-text/90">
+                                    <i class="ph-bold ph-check text-emerald-600 text-base shrink-0 mt-0.5"></i>
+                                    <span><strong>SLA de alterações:</strong> Ajustes mensais de fotos, textos ou links</span>
+                                </div>
+                                <div class="flex items-start gap-2.5 text-xs sm:text-sm text-brand-text/90">
+                                    <i class="ph-bold ph-check text-emerald-600 text-base shrink-0 mt-0.5"></i>
+                                    <span>Configuração de Pixel Meta Ads & Google Tag</span>
+                                </div>
+                                <div class="flex items-start gap-2.5 text-xs sm:text-sm text-brand-muted/50 line-through">
+                                    <i class="ph-bold ph-x text-brand-muted/40 text-base shrink-0 mt-0.5"></i>
+                                    <span>CRM Próprio de Gestão de Leads</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="https://wa.me/5512991525876?text=Ol%C3%A1!%20Gostaria%20de%20iniciar%20com%20o%20Plano%20Presen%C3%A7a%20(LP%20+%20Manuten%C3%A7%C3%A3o)."
+                               target="_blank" rel="noopener noreferrer"
+                               class="w-full flex items-center justify-center gap-2 py-3.5 px-6 rounded-xl border-2 border-brand-text/20 hover:border-brand-accent bg-transparent hover:bg-brand-accent text-brand-text hover:text-white font-heading font-bold text-sm transition-all duration-200">
+                                <span>Contratar Plano Presença</span>
+                                <i class="ph-bold ph-arrow-right text-xs"></i>
+                            </a>
+                            <p class="text-center text-[11px] text-brand-muted mt-2">Valor do setup definido no briefing inicial</p>
+                        </div>
+                    </div>
+
+                    <!-- Plano 2: Plano Conversão (FOCO PRINCIPAL / MAIS ESCOLHIDO) -->
+                    <div class="relative bg-brand-card rounded-3xl p-8 sm:p-9 border-2 border-brand-accent shadow-[0_20px_50px_rgba(184,146,106,0.18)] flex flex-col justify-between lg:-translate-y-4 transition-all duration-300">
+                        
+                        <!-- Badge Flutuante no Topo -->
+                        <div class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-full bg-brand-accent text-white font-heading font-bold text-xs uppercase tracking-wider shadow-md flex items-center gap-1.5 whitespace-nowrap">
+                            <i class="ph-fill ph-star text-amber-200"></i>
+                            <span>Foco Principal & Mais Recomendado</span>
+                        </div>
+
+                        <div>
+                            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-accent/15 text-brand-accent text-xs font-bold uppercase tracking-wider mb-4 mt-2">
+                                Máquina de Vendas Completa
+                            </div>
+                            <h3 class="font-heading text-2xl sm:text-3xl font-extrabold text-brand-text mb-2">
+                                Plano Conversão
+                            </h3>
+                            <p class="text-xs sm:text-sm text-brand-muted mb-6 leading-relaxed">
+                                A infraestrutura definitiva para clínicas e empresas: Landing Page de alta performance integrada ao CRM proprietário para zero contatos perdidos no WhatsApp.
+                            </p>
+
+                            <!-- Bloco de Preços -->
+                            <div class="mb-6 pb-6 border-b border-brand-border/60 space-y-3">
+                                <div>
+                                    <span class="text-[11px] font-bold text-brand-muted uppercase tracking-wider">1. Setup de Infraestrutura (Único)</span>
+                                    <div class="flex items-baseline gap-1 mt-0.5">
+                                        <span class="text-xs font-bold text-brand-accent">R$</span>
+                                        <span class="font-heading text-2xl sm:text-3xl font-extrabold text-brand-accent">800</span>
+                                        <span class="text-xs text-brand-muted font-normal">a</span>
+                                        <span class="text-xs font-bold text-brand-accent">R$</span>
+                                        <span class="font-heading text-2xl sm:text-3xl font-extrabold text-brand-accent">1.500</span>
+                                    </div>
+                                    <p class="text-[11px] text-brand-muted mt-0.5">Condição: 50% fechamento / 50% aprovação</p>
+                                </div>
+
+                                <div class="pt-2 border-t border-dashed border-brand-border/60">
+                                    <span class="text-[11px] font-bold text-brand-muted uppercase tracking-wider">2. Manutenção (R$50) + Licença CRM (R$150)</span>
+                                    <div class="flex items-baseline gap-1 mt-0.5">
+                                        <span class="text-base font-bold text-brand-accent">+ R$</span>
+                                        <span class="font-heading text-3xl font-extrabold text-brand-accent">200</span>
+                                        <span class="text-xs text-brand-muted font-medium">/mês</span>
+                                    </div>
+                                    <p class="text-[11px] text-emerald-700 font-semibold">Inclui software CRM em prateleira + infraestrutura</p>
+                                </div>
+                            </div>
+
+                            <!-- Lista de Entregas -->
+                            <div class="space-y-3 mb-8">
+                                <p class="text-xs font-bold uppercase tracking-wider text-brand-text mb-2">Tudo do Plano Presença, mais:</p>
+                                
+                                <div class="flex items-start gap-2.5 text-xs sm:text-sm text-brand-text font-semibold">
+                                    <i class="ph-fill ph-check-circle text-brand-accent text-base shrink-0 mt-0.5"></i>
+                                    <span><strong>Software Proprietário CRM Estúdio 18:</strong> Painel em formato de Funil Kanban</span>
+                                </div>
+                                <div class="flex items-start gap-2.5 text-xs sm:text-sm text-brand-text font-semibold">
+                                    <i class="ph-fill ph-check-circle text-brand-accent text-base shrink-0 mt-0.5"></i>
+                                    <span><strong>Zero contatos perdidos:</strong> Organização e histórico de leads no WhatsApp</span>
+                                </div>
+                                <div class="flex items-start gap-2.5 text-xs sm:text-sm text-brand-text">
+                                    <i class="ph-bold ph-check text-emerald-600 text-base shrink-0 mt-0.5"></i>
+                                    <span>Captura prévia dos dados antes de abrir o WhatsApp</span>
+                                </div>
+                                <div class="flex items-start gap-2.5 text-xs sm:text-sm text-brand-text">
+                                    <i class="ph-bold ph-check text-emerald-600 text-base shrink-0 mt-0.5"></i>
+                                    <span>Métricas e relatórios básicos de atendimento e conversão</span>
+                                </div>
+                                <div class="flex items-start gap-2.5 text-xs sm:text-sm text-brand-text">
+                                    <i class="ph-bold ph-check text-emerald-600 text-base shrink-0 mt-0.5"></i>
+                                    <span>SLA de suporte prioritário e manutenção técnica contínua</span>
+                                </div>
+                                <div class="flex items-start gap-2.5 text-xs sm:text-sm text-brand-text">
+                                    <i class="ph-bold ph-check text-emerald-600 text-base shrink-0 mt-0.5"></i>
+                                    <span>Opção de desenvolvimento de módulos customizados sob medida</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="https://wa.me/5512991525876?text=Ol%C3%A1!%20Gostaria%20de%20contratar%20o%20Plano%20Convers%C3%A3o%20(LP%20+%20CRM%20Integrado)."
+                               target="_blank" rel="noopener noreferrer"
+                               class="btn-shimmer w-full flex items-center justify-center gap-2 py-4 px-6 rounded-xl bg-brand-accent hover:bg-brand-accentDark text-white font-heading font-bold text-sm sm:text-base shadow-[0_8px_25px_rgba(184,146,106,0.4)] transition-all duration-200">
+                                <i class="ph-bold ph-whatsapp-logo text-lg"></i>
+                                <span>Garantir Plano Conversão (LP + CRM)</span>
+                            </a>
+                            <p class="text-center text-[11px] text-brand-muted mt-2 font-medium">Recomendado para equipes que buscam escala</p>
+                        </div>
+                    </div>
+
+                    <!-- Plano 3: Plano Growth -->
+                    <div class="bg-brand-card rounded-3xl p-8 border border-brand-border shadow-[0_10px_30px_rgba(58,50,44,0.03)] flex flex-col justify-between hover:border-brand-accent/40 transition-all duration-300">
+                        <div>
+                            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-bg text-brand-muted text-xs font-bold uppercase tracking-wider mb-4">
+                                Escala & Performance
+                            </div>
+                            <h3 class="font-heading text-2xl font-extrabold text-brand-text mb-2">
+                                Plano Growth
+                            </h3>
+                            <p class="text-xs sm:text-sm text-brand-muted mb-6 leading-relaxed">
+                                Para empresas validadas com capacidade operacional comprovada para atender e absorver um alto volume diário de leads.
+                            </p>
+
+                            <!-- Bloco de Preços -->
+                            <div class="mb-6 pb-6 border-b border-brand-border/60 space-y-3">
+                                <div>
+                                    <span class="text-[11px] font-bold text-brand-muted uppercase tracking-wider">Infraestrutura + Tráfego Pago</span>
+                                    <div class="flex items-baseline gap-1 mt-0.5">
+                                        <span class="font-heading text-2xl sm:text-3xl font-extrabold text-brand-text">Sob Análise</span>
+                                    </div>
+                                    <p class="text-[11px] text-brand-muted mt-0.5">Precificação sob medida / % de performance</p>
+                                </div>
+
+                                <div class="pt-2 border-t border-dashed border-brand-border/60">
+                                    <span class="text-[11px] font-bold text-brand-muted uppercase tracking-wider">Requisito Operacional</span>
+                                    <p class="text-xs font-semibold text-brand-text mt-0.5">Infraestrutura LP + CRM validada</p>
+                                    <p class="text-[11px] text-brand-muted">Equipe de atendimento pronta para alta demanda</p>
+                                </div>
+                            </div>
+
+                            <!-- Lista de Entregas -->
+                            <div class="space-y-3 mb-8">
+                                <p class="text-xs font-bold uppercase tracking-wider text-brand-text mb-2">Tudo do Plano Conversão, mais:</p>
+                                
+                                <div class="flex items-start gap-2.5 text-xs sm:text-sm text-brand-text/90">
+                                    <i class="ph-bold ph-check text-emerald-600 text-base shrink-0 mt-0.5"></i>
+                                    <span>Infraestrutura Completa (LP de Alta Conversão + CRM)</span>
+                                </div>
+                                <div class="flex items-start gap-2.5 text-xs sm:text-sm text-brand-text/90">
+                                    <i class="ph-bold ph-check text-emerald-600 text-base shrink-0 mt-0.5"></i>
+                                    <span><strong>Gestão de Tráfego Pago:</strong> Meta Ads & Google Ads</span>
+                                </div>
+                                <div class="flex items-start gap-2.5 text-xs sm:text-sm text-brand-text/90">
+                                    <i class="ph-bold ph-check text-emerald-600 text-base shrink-0 mt-0.5"></i>
+                                    <span>Otimização contínua de criativos, copys e público</span>
+                                </div>
+                                <div class="flex items-start gap-2.5 text-xs sm:text-sm text-brand-text/90">
+                                    <i class="ph-bold ph-check text-emerald-600 text-base shrink-0 mt-0.5"></i>
+                                    <span>Relatórios executivos de ROI, CAC e Custo por Lead</span>
+                                </div>
+                                <div class="flex items-start gap-2.5 text-xs sm:text-sm text-brand-text/90">
+                                    <i class="ph-bold ph-check text-emerald-600 text-base shrink-0 mt-0.5"></i>
+                                    <span>Reuniões de alinhamento com gestor de performance</span>
+                                </div>
+                                <div class="flex items-start gap-2.5 text-xs sm:text-sm text-brand-text/90">
+                                    <i class="ph-bold ph-check text-emerald-600 text-base shrink-0 mt-0.5"></i>
+                                    <span>Suporte estratégico para expansão de faturamento</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="https://wa.me/5512991525876?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Plano%20Growth%20com%20Gest%C3%A3o%20de%20Tr%C3%A1fego%20Pago."
+                               target="_blank" rel="noopener noreferrer"
+                               class="w-full flex items-center justify-center gap-2 py-3.5 px-6 rounded-xl border-2 border-brand-text/20 hover:border-brand-accent bg-transparent hover:bg-brand-accent text-brand-text hover:text-white font-heading font-bold text-sm transition-all duration-200">
+                                <span>Solicitar Análise de Growth</span>
+                                <i class="ph-bold ph-arrow-right text-xs"></i>
+                            </a>
+                            <p class="text-center text-[11px] text-brand-muted mt-2">Passa por reunião prévia de diagnóstico</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Selos de Confiança & Diretrizes Comerciais -->
+                <div class="mt-14 pt-10 border-t border-brand-border/60 grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
+                    <div class="flex items-center gap-3.5 justify-center md:justify-start p-4 rounded-2xl bg-brand-card/60 border border-brand-border/60">
+                        <div class="w-11 h-11 rounded-xl bg-brand-accent/15 text-brand-accent flex items-center justify-center shrink-0">
+                            <i class="ph-bold ph-handshake text-2xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-brand-text">Condição Segura 50/50</p>
+                            <p class="text-xs text-brand-muted">50% no início e 50% na aprovação final</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-3.5 justify-center md:justify-start p-4 rounded-2xl bg-brand-card/60 border border-brand-border/60">
+                        <div class="w-11 h-11 rounded-xl bg-brand-accent/15 text-brand-accent flex items-center justify-center shrink-0">
+                            <i class="ph-bold ph-wrench text-2xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-brand-text">SLA de Manutenção</p>
+                            <p class="text-xs text-brand-muted">Pequenas alterações mensais inclusas</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-3.5 justify-center md:justify-start p-4 rounded-2xl bg-brand-card/60 border border-brand-border/60">
+                        <div class="w-11 h-11 rounded-xl bg-brand-accent/15 text-brand-accent flex items-center justify-center shrink-0">
+                            <i class="ph-bold ph-kanban text-2xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-brand-text">CRM Proprietário</p>
+                            <p class="text-xs text-brand-muted">Gestão e funil de leads no WhatsApp</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ / Perguntas Frequentes sobre a Contratação -->
+                <div class="mt-20 max-w-3xl mx-auto">
+                    <div class="text-center mb-10">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-bg text-brand-accent text-xs font-bold uppercase tracking-wider mb-2">
+                            <i class="ph-bold ph-question"></i> Dúvidas Comuns
+                        </div>
+                        <h3 class="font-heading text-2xl sm:text-3xl font-extrabold text-brand-text">
+                            Perguntas Frequentes sobre os Modelos de Contratação
+                        </h3>
+                    </div>
+
+                    <div class="space-y-4" id="faq-accordion">
+                        
+                        <!-- Pergunta 1 -->
+                        <div class="faq-item bg-brand-card rounded-2xl border border-brand-border/80 overflow-hidden transition-all duration-200">
+                            <button type="button" class="faq-question w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 font-heading font-bold text-base sm:text-lg text-brand-text hover:text-brand-accent transition-colors">
+                                <span>Como é definido o valor do Setup (R$ 800 a R$ 1.500) e a condição de pagamento?</span>
+                                <i class="ph-bold ph-caret-down text-brand-muted text-lg transition-transform duration-300"></i>
+                            </button>
+                            <div class="faq-answer hidden px-5 sm:px-6 pb-5 sm:pb-6 text-sm text-brand-muted leading-relaxed border-t border-brand-border/40 pt-4">
+                                O valor do setup é alinhado durante a reunião inicial de briefing: projetos mais diretos com seções padronizadas e conteúdo pré-definido ficam em <strong>R$ 800</strong>; páginas mais complexas com storytelling extenso e recursos avançados ficam em <strong>R$ 1.500</strong>. O pagamento é feito com <strong>50% no fechamento</strong> e os <strong>50% restantes apenas na aprovação final</strong> antes da publicação.
+                            </div>
+                        </div>
+
+                        <!-- Pergunta 2 -->
+                        <div class="faq-item bg-brand-card rounded-2xl border border-brand-border/80 overflow-hidden transition-all duration-200">
+                            <button type="button" class="faq-question w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 font-heading font-bold text-base sm:text-lg text-brand-text hover:text-brand-accent transition-colors">
+                                <span>O que cobre a taxa de manutenção de R$ 50,00/mês?</span>
+                                <i class="ph-bold ph-caret-down text-brand-muted text-lg transition-transform duration-300"></i>
+                            </button>
+                            <div class="faq-answer hidden px-5 sm:px-6 pb-5 sm:pb-6 text-sm text-brand-muted leading-relaxed border-t border-brand-border/40 pt-4">
+                                A taxa garante que sua página permaneça online, segura e ultrarrápida. Cobre os custos de servidor de alta performance, renovação de domínio, suporte técnico preventivo e dá direito a solicitar pequenas alterações pontuais ao longo do mês (como substituição de fotos da equipe, atualização de textos, preços ou links).
+                            </div>
+                        </div>
+
+                        <!-- Pergunta 3 -->
+                        <div class="faq-item bg-brand-card rounded-2xl border border-brand-border/80 overflow-hidden transition-all duration-200">
+                            <button type="button" class="faq-question w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 font-heading font-bold text-base sm:text-lg text-brand-text hover:text-brand-accent transition-colors">
+                                <span>Como funciona o Licenciamento do CRM (R$ 150,00/mês)?</span>
+                                <i class="ph-bold ph-caret-down text-brand-muted text-lg transition-transform duration-300"></i>
+                            </button>
+                            <div class="faq-answer hidden px-5 sm:px-6 pb-5 sm:pb-6 text-sm text-brand-muted leading-relaxed border-t border-brand-border/40 pt-4">
+                                O CRM é um software proprietário desenvolvido pelo Estúdio 18 Digital. Ele centraliza todos os leads que chegam da sua Landing Page em um painel Kanban intuitivo (Novo Lead, Em Atendimento, Proposta, Venda Fechada), evitando que contatos do WhatsApp se percam. Caso sua empresa precise de módulos ou automações sob medida, orçamos um desenvolvimento customizado.
+                            </div>
+                        </div>
+
+                        <!-- Pergunta 4 -->
+                        <div class="faq-item bg-brand-card rounded-2xl border border-brand-border/80 overflow-hidden transition-all duration-200">
+                            <button type="button" class="faq-question w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 font-heading font-bold text-base sm:text-lg text-brand-text hover:text-brand-accent transition-colors">
+                                <span>Quem pode contratar o Plano Growth (Gestão de Tráfego)?</span>
+                                <i class="ph-bold ph-caret-down text-brand-muted text-lg transition-transform duration-300"></i>
+                            </button>
+                            <div class="faq-answer hidden px-5 sm:px-6 pb-5 sm:pb-6 text-sm text-brand-muted leading-relaxed border-t border-brand-border/40 pt-4">
+                                O Plano Growth é recomendado para negócios que já possuem a infraestrutura (LP + CRM) validada e uma equipe de atendimento preparada para converter uma alta demanda de contatos diários. A precificação é avaliada caso a caso, podendo envolver valor fixo e percentual sobre o desempenho de vendas.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========================================================================= -->
+        <!-- SEÇÃO DE CONTATO & DIAGNÓSTICO DE PROJETO                                 -->
+        <!-- ========================================================================= -->
+        <section id="contato" class="relative py-20 lg:py-28 overflow-hidden scroll-mt-20">
+            <div class="max-w-7xl mx-auto px-6 w-full">
+                
+                <!-- Cabeçalho da Seção -->
+                <div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-14 lg:mb-16">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-card border border-brand-border shadow-sm mb-4">
+                        <i class="ph-bold ph-chat-circle-dots text-brand-accent text-sm"></i>
+                        <span class="text-brand-accent text-xs font-bold uppercase tracking-[0.16em] font-sans">
+                            Vamos Conversar?
+                        </span>
+                    </div>
+
+                    <h2 class="font-heading text-3xl sm:text-4xl md:text-5xl font-extrabold text-brand-text tracking-tight leading-[1.18] mb-5">
+                        Pronto para transformar sua presença digital e <span class="text-brand-accent">multiplicar suas vendas</span>?
+                    </h2>
+
+                    <p class="text-base sm:text-lg text-brand-muted leading-relaxed">
+                        Conte-nos sobre o seu negócio e objetivos. Analisaremos sua estrutura atual e apresentaremos a melhor estratégia para acelerar suas conversões.
+                    </p>
+                </div>
+
+                <!-- Grid de Contato: Diagnóstico Gamificado vs Canais Diretos (12 Colunas) -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+                    
+                    <!-- Coluna da Esquerda: Diagnóstico Interativo & Gamificado (7 Colunas) -->
+                    <div class="lg:col-span-7 bg-brand-card rounded-3xl p-6 sm:p-10 border border-brand-border shadow-[0_15px_40px_rgba(58,50,44,0.05)] relative overflow-hidden" id="quiz-container">
+                        
+                        <!-- Cabeçalho do Quiz com Barra de Progresso Gamificada -->
+                        <div class="mb-6 pb-6 border-b border-brand-border/60">
+                            <div class="flex items-center justify-between gap-2 mb-2">
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-accent/15 text-brand-accent text-xs font-bold uppercase tracking-wider">
+                                    <i class="ph-bold ph-game-controller text-sm"></i>
+                                    Diagnóstico Interativo
+                                </span>
+                                <span class="text-xs font-bold text-brand-muted" id="quiz-step-indicator">
+                                    Etapa <span class="text-brand-accent font-extrabold" id="quiz-current-step-num">1</span> de 5
+                                </span>
+                            </div>
+
+                            <div class="flex items-center justify-between text-xs font-semibold text-brand-text mb-2">
+                                <span id="quiz-step-title">Objetivo Principal</span>
+                                <span class="text-brand-accent font-bold" id="quiz-step-percentage">20%</span>
+                            </div>
+
+                            <!-- Barra de Progresso Visual -->
+                            <div class="w-full h-2 rounded-full bg-brand-bg overflow-hidden relative">
+                                <div id="quiz-progress-bar" class="h-full bg-brand-accent rounded-full transition-all duration-500 ease-out" style="width: 20%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- ETAPA 1: Foco do Negócio -->
+                        <div class="quiz-step space-y-4" data-step="1">
+                            <div>
+                                <h3 class="font-heading text-xl sm:text-2xl font-extrabold text-brand-text mb-1">
+                                    Qual é o objetivo principal do seu negócio hoje?
+                                </h3>
+                                <p class="text-xs sm:text-sm text-brand-muted">
+                                    Selecione a opção que melhor descreve sua prioridade atual:
+                                </p>
+                            </div>
+
+                            <div class="space-y-3 pt-2">
+                                <button type="button" class="quiz-option w-full p-4 rounded-2xl border-2 border-brand-border/80 hover:border-brand-accent/60 bg-brand-bg/40 hover:bg-white text-left transition-all duration-200 flex items-center justify-between group" data-key="foco" data-value="Landing Page de Alta Conversão">
+                                    <div class="flex items-center gap-3.5">
+                                        <div class="w-10 h-10 rounded-xl bg-brand-accent/15 text-brand-accent flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                                            <i class="ph-bold ph-rocket-launch text-xl"></i>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm font-bold text-brand-text">Criar Landing Page de Alta Conversão</p>
+                                            <p class="text-xs text-brand-muted">Página rápida focada em campanhas de Google & Meta Ads</p>
+                                        </div>
+                                    </div>
+                                    <i class="ph-bold ph-arrow-right text-brand-muted/40 group-hover:text-brand-accent group-hover:translate-x-1 transition-all"></i>
+                                </button>
+
+                                <button type="button" class="quiz-option w-full p-4 rounded-2xl border-2 border-brand-border/80 hover:border-brand-accent/60 bg-brand-bg/40 hover:bg-white text-left transition-all duration-200 flex items-center justify-between group" data-key="foco" data-value="Organizar Leads & CRM no WhatsApp">
+                                    <div class="flex items-center gap-3.5">
+                                        <div class="w-10 h-10 rounded-xl bg-brand-accent/15 text-brand-accent flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                                            <i class="ph-bold ph-kanban text-xl"></i>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm font-bold text-brand-text">Organizar Leads & CRM no WhatsApp</p>
+                                            <p class="text-xs text-brand-muted">Funil Kanban para zerar contatos perdidos pela recepção/vendas</p>
+                                        </div>
+                                    </div>
+                                    <i class="ph-bold ph-arrow-right text-brand-muted/40 group-hover:text-brand-accent group-hover:translate-x-1 transition-all"></i>
+                                </button>
+
+                                <button type="button" class="quiz-option w-full p-4 rounded-2xl border-2 border-brand-border/80 hover:border-brand-accent/60 bg-brand-bg/40 hover:bg-white text-left transition-all duration-200 flex items-center justify-between group" data-key="foco" data-value="Escalar com Tráfego Pago & Performance">
+                                    <div class="flex items-center gap-3.5">
+                                        <div class="w-10 h-10 rounded-xl bg-brand-accent/15 text-brand-accent flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                                            <i class="ph-bold ph-chart-line-up text-xl"></i>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm font-bold text-brand-text">Escalar com Tráfego Pago & Performance</p>
+                                            <p class="text-xs text-brand-muted">Infraestrutura validada + gestão profissional de anúncios</p>
+                                        </div>
+                                    </div>
+                                    <i class="ph-bold ph-arrow-right text-brand-muted/40 group-hover:text-brand-accent group-hover:translate-x-1 transition-all"></i>
+                                </button>
+
+                                <button type="button" class="quiz-option w-full p-4 rounded-2xl border-2 border-brand-border/80 hover:border-brand-accent/60 bg-brand-bg/40 hover:bg-white text-left transition-all duration-200 flex items-center justify-between group" data-key="foco" data-value="Autoridade & Site Institucional">
+                                    <div class="flex items-center gap-3.5">
+                                        <div class="w-10 h-10 rounded-xl bg-brand-accent/15 text-brand-accent flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                                            <i class="ph-bold ph-buildings text-xl"></i>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm font-bold text-brand-text">Autoridade & Site Institucional</p>
+                                            <p class="text-xs text-brand-muted">Posicionamento corporativo multi-páginas de alto padrão</p>
+                                        </div>
+                                    </div>
+                                    <i class="ph-bold ph-arrow-right text-brand-muted/40 group-hover:text-brand-accent group-hover:translate-x-1 transition-all"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- ETAPA 2: Segmento de Atuação -->
+                        <div class="quiz-step space-y-4 hidden" data-step="2">
+                            <div>
+                                <h3 class="font-heading text-xl sm:text-2xl font-extrabold text-brand-text mb-1">
+                                    Qual é o seu nicho de atuação?
+                                </h3>
+                                <p class="text-xs sm:text-sm text-brand-muted">
+                                    Adaptamos a estratégia visual e a copy de acordo com o seu público:
+                                </p>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                                <button type="button" class="quiz-option p-4 rounded-2xl border-2 border-brand-border/80 hover:border-brand-accent/60 bg-brand-bg/40 hover:bg-white text-left transition-all duration-200 flex items-center gap-3 group" data-key="nicho" data-value="Saúde, Clínicas & Estética">
+                                    <div class="w-9 h-9 rounded-xl bg-brand-accent/15 text-brand-accent flex items-center justify-center shrink-0">
+                                        <i class="ph-bold ph-first-aid text-lg"></i>
+                                    </div>
+                                    <span class="text-xs sm:text-sm font-bold text-brand-text">Saúde, Clínicas & Estética</span>
+                                </button>
+
+                                <button type="button" class="quiz-option p-4 rounded-2xl border-2 border-brand-border/80 hover:border-brand-accent/60 bg-brand-bg/40 hover:bg-white text-left transition-all duration-200 flex items-center gap-3 group" data-key="nicho" data-value="Consultoria, Advocacia & B2B">
+                                    <div class="w-9 h-9 rounded-xl bg-brand-accent/15 text-brand-accent flex items-center justify-center shrink-0">
+                                        <i class="ph-bold ph-briefcase text-lg"></i>
+                                    </div>
+                                    <span class="text-xs sm:text-sm font-bold text-brand-text">Advocacia & B2B</span>
+                                </button>
+
+                                <button type="button" class="quiz-option p-4 rounded-2xl border-2 border-brand-border/80 hover:border-brand-accent/60 bg-brand-bg/40 hover:bg-white text-left transition-all duration-200 flex items-center gap-3 group" data-key="nicho" data-value="Infoprodutos, Cursos & Especialistas">
+                                    <div class="w-9 h-9 rounded-xl bg-brand-accent/15 text-brand-accent flex items-center justify-center shrink-0">
+                                        <i class="ph-bold ph-graduation-cap text-lg"></i>
+                                    </div>
+                                    <span class="text-xs sm:text-sm font-bold text-brand-text">Infoproduto & Cursos</span>
+                                </button>
+
+                                <button type="button" class="quiz-option p-4 rounded-2xl border-2 border-brand-border/80 hover:border-brand-accent/60 bg-brand-bg/40 hover:bg-white text-left transition-all duration-200 flex items-center gap-3 group" data-key="nicho" data-value="E-commerce & Varejo">
+                                    <div class="w-9 h-9 rounded-xl bg-brand-accent/15 text-brand-accent flex items-center justify-center shrink-0">
+                                        <i class="ph-bold ph-shopping-bag text-lg"></i>
+                                    </div>
+                                    <span class="text-xs sm:text-sm font-bold text-brand-text">E-commerce & Varejo</span>
+                                </button>
+
+                                <button type="button" class="quiz-option p-4 rounded-2xl border-2 border-brand-border/80 hover:border-brand-accent/60 bg-brand-bg/40 hover:bg-white text-left transition-all duration-200 flex items-center gap-3 group sm:col-span-2" data-key="nicho" data-value="Arquitetura, Engenharia ou Outro">
+                                    <div class="w-9 h-9 rounded-xl bg-brand-accent/15 text-brand-accent flex items-center justify-center shrink-0">
+                                        <i class="ph-bold ph-sparkle text-lg"></i>
+                                    </div>
+                                    <span class="text-xs sm:text-sm font-bold text-brand-text">Arquitetura, Engenharia ou Outro Nicho</span>
+                                </button>
+                            </div>
+
+                            <div class="pt-3">
+                                <button type="button" class="quiz-back-btn text-xs font-bold text-brand-muted hover:text-brand-text flex items-center gap-1.5 transition-colors">
+                                    <i class="ph-bold ph-arrow-left"></i> Voltar à etapa anterior
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- ETAPA 3: Maior Gargalo Atual -->
+                        <div class="quiz-step space-y-4 hidden" data-step="3">
+                            <div>
+                                <h3 class="font-heading text-xl sm:text-2xl font-extrabold text-brand-text mb-1">
+                                    Qual é o seu maior gargalo de vendas hoje?
+                                </h3>
+                                <p class="text-xs sm:text-sm text-brand-muted">
+                                    Identificaremos exatamente o ponto de perda de faturamento:
+                                </p>
+                            </div>
+
+                            <div class="space-y-3 pt-2">
+                                <button type="button" class="quiz-option w-full p-4 rounded-2xl border-2 border-brand-border/80 hover:border-brand-accent/60 bg-brand-bg/40 hover:bg-white text-left transition-all duration-200 flex items-center justify-between group" data-key="gargalo" data-value="Página atual não converte cliques em contatos">
+                                    <div class="flex items-center gap-3">
+                                        <span class="w-8 h-8 rounded-full bg-rose-100 text-rose-700 flex items-center justify-center font-bold text-xs shrink-0">1</span>
+                                        <p class="text-xs sm:text-sm font-semibold text-brand-text">Minha página atual é lenta, amadora ou não gera conversão</p>
+                                    </div>
+                                    <i class="ph-bold ph-arrow-right text-brand-muted/40 group-hover:text-brand-accent group-hover:translate-x-1 transition-all"></i>
+                                </button>
+
+                                <button type="button" class="quiz-option w-full p-4 rounded-2xl border-2 border-brand-border/80 hover:border-brand-accent/60 bg-brand-bg/40 hover:bg-white text-left transition-all duration-200 flex items-center justify-between group" data-key="gargalo" data-value="Leads chegam no WhatsApp mas se perdem sem CRM">
+                                    <div class="flex items-center gap-3">
+                                        <span class="w-8 h-8 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-xs shrink-0">2</span>
+                                        <p class="text-xs sm:text-sm font-semibold text-brand-text">Recebo mensagens no WhatsApp, mas os contatos se perdem sem follow-up</p>
+                                    </div>
+                                    <i class="ph-bold ph-arrow-right text-brand-muted/40 group-hover:text-brand-accent group-hover:translate-x-1 transition-all"></i>
+                                </button>
+
+                                <button type="button" class="quiz-option w-full p-4 rounded-2xl border-2 border-brand-border/80 hover:border-brand-accent/60 bg-brand-bg/40 hover:bg-white text-left transition-all duration-200 flex items-center justify-between group" data-key="gargalo" data-value="Preciso de estrutura pronta para rodar tráfego pago">
+                                    <div class="flex items-center gap-3">
+                                        <span class="w-8 h-8 rounded-full bg-blue-100 text-blue-800 flex items-center justify-center font-bold text-xs shrink-0">3</span>
+                                        <p class="text-xs sm:text-sm font-semibold text-brand-text">Ainda não anuncio no Google ou Meta por falta de estrutura profissional</p>
+                                    </div>
+                                    <i class="ph-bold ph-arrow-right text-brand-muted/40 group-hover:text-brand-accent group-hover:translate-x-1 transition-all"></i>
+                                </button>
+
+                                <button type="button" class="quiz-option w-full p-4 rounded-2xl border-2 border-brand-border/80 hover:border-brand-accent/60 bg-brand-bg/40 hover:bg-white text-left transition-all duration-200 flex items-center justify-between group" data-key="gargalo" data-value="Estou começando do zero e preciso de direcionamento">
+                                    <div class="flex items-center gap-3">
+                                        <span class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xs shrink-0">4</span>
+                                        <p class="text-xs sm:text-sm font-semibold text-brand-text">Estou começando do zero e preciso de orientação do melhor caminho</p>
+                                    </div>
+                                    <i class="ph-bold ph-arrow-right text-brand-muted/40 group-hover:text-brand-accent group-hover:translate-x-1 transition-all"></i>
+                                </button>
+                            </div>
+
+                            <div class="pt-3">
+                                <button type="button" class="quiz-back-btn text-xs font-bold text-brand-muted hover:text-brand-text flex items-center gap-1.5 transition-colors">
+                                    <i class="ph-bold ph-arrow-left"></i> Voltar à etapa anterior
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- ETAPA 4: Volume Estimado de Atendimento -->
+                        <div class="quiz-step space-y-4 hidden" data-step="4">
+                            <div>
+                                <h3 class="font-heading text-xl sm:text-2xl font-extrabold text-brand-text mb-1">
+                                    Quantos potenciais clientes você pretende atender por dia?
+                                </h3>
+                                <p class="text-xs sm:text-sm text-brand-muted">
+                                    Dimensionamos a capacidade do funil e suporte de acordo com seu ritmo:
+                                </p>
+                            </div>
+
+                            <div class="space-y-3 pt-2">
+                                <button type="button" class="quiz-option w-full p-4 rounded-2xl border-2 border-brand-border/80 hover:border-brand-accent/60 bg-brand-bg/40 hover:bg-white text-left transition-all duration-200 flex items-center justify-between group" data-key="volume" data-value="1 a 5 atendimentos/dia (Início / Validação)">
+                                    <div class="flex items-center gap-3.5">
+                                        <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold text-sm shrink-0">
+                                            <i class="ph-bold ph-user"></i>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm font-bold text-brand-text">1 a 5 atendimentos / dia</p>
+                                            <p class="text-xs text-brand-muted">Fase de validação, profissional liberal ou atendimento direto</p>
+                                        </div>
+                                    </div>
+                                    <i class="ph-bold ph-arrow-right text-brand-muted/40 group-hover:text-brand-accent group-hover:translate-x-1 transition-all"></i>
+                                </button>
+
+                                <button type="button" class="quiz-option w-full p-4 rounded-2xl border-2 border-brand-border/80 hover:border-brand-accent/60 bg-brand-bg/40 hover:bg-white text-left transition-all duration-200 flex items-center justify-between group" data-key="volume" data-value="6 a 20 atendimentos/dia (Crescimento / Equipe)">
+                                    <div class="flex items-center gap-3.5">
+                                        <div class="w-10 h-10 rounded-xl bg-brand-accent/15 text-brand-accent flex items-center justify-center font-bold text-sm shrink-0">
+                                            <i class="ph-bold ph-users-three"></i>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm font-bold text-brand-text">6 a 20 atendimentos / dia (Mais Comum ⭐)</p>
+                                            <p class="text-xs text-brand-muted">Clínicas e empresas com equipe de vendas ou recepção ativa</p>
+                                        </div>
+                                    </div>
+                                    <i class="ph-bold ph-arrow-right text-brand-muted/40 group-hover:text-brand-accent group-hover:translate-x-1 transition-all"></i>
+                                </button>
+
+                                <button type="button" class="quiz-option w-full p-4 rounded-2xl border-2 border-brand-border/80 hover:border-brand-accent/60 bg-brand-bg/40 hover:bg-white text-left transition-all duration-200 flex items-center justify-between group" data-key="volume" data-value="Mais de 20 atendimentos/dia (Alta Demanda / Escala)">
+                                    <div class="flex items-center gap-3.5">
+                                        <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center font-bold text-sm shrink-0">
+                                            <i class="ph-bold ph-chart-polar"></i>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm font-bold text-brand-text">+20 atendimentos / dia</p>
+                                            <p class="text-xs text-brand-muted">Operações consolidadas buscando escala agressiva com tráfego pago</p>
+                                        </div>
+                                    </div>
+                                    <i class="ph-bold ph-arrow-right text-brand-muted/40 group-hover:text-brand-accent group-hover:translate-x-1 transition-all"></i>
+                                </button>
+                            </div>
+
+                            <div class="pt-3">
+                                <button type="button" class="quiz-back-btn text-xs font-bold text-brand-muted hover:text-brand-text flex items-center gap-1.5 transition-colors">
+                                    <i class="ph-bold ph-arrow-left"></i> Voltar à etapa anterior
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- ETAPA 5: Raio-X Concluído & Envio do Contato -->
+                        <div class="quiz-step space-y-5 hidden" data-step="5">
+                            
+                            <!-- Card de Recomendação do Diagnóstico -->
+                            <div class="p-5 rounded-2xl bg-brand-bg/70 border-2 border-brand-accent/40 shadow-sm relative overflow-hidden">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="px-2.5 py-0.5 rounded-full bg-brand-accent text-white text-[10px] font-extrabold uppercase tracking-wider">
+                                        ★ Raio-X Concluído
+                                    </span>
+                                    <span class="text-xs font-bold text-brand-muted">Diagnóstico Gerado</span>
+                                </div>
+
+                                <h4 class="font-heading text-lg font-extrabold text-brand-text" id="quiz-result-plan">
+                                    Plano Conversão (LP + CRM Integrado)
+                                </h4>
+                                
+                                <p class="text-xs text-brand-muted mt-1 leading-relaxed" id="quiz-result-desc">
+                                    A infraestrutura perfeita para o seu nicho com Landing Page de alta performance integrada ao CRM proprietário para não perder nenhum contato no WhatsApp.
+                                </p>
+                            </div>
+
+                            <!-- Formulário Final: Nome e WhatsApp -->
+                            <form id="quiz-final-form" class="space-y-4">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label for="quiz-name" class="block text-xs font-bold text-brand-text uppercase tracking-wider mb-1.5">
+                                            Seu Nome Completo *
+                                        </label>
+                                        <input type="text" id="quiz-name" required placeholder="Ex: Roberto Silva"
+                                               class="w-full px-4 py-3 rounded-xl bg-brand-bg/60 border border-brand-border text-sm text-brand-text focus:outline-none focus:ring-2 focus:ring-brand-accent/50 focus:bg-white transition-all">
+                                    </div>
+
+                                    <div>
+                                        <label for="quiz-whatsapp" class="block text-xs font-bold text-brand-text uppercase tracking-wider mb-1.5">
+                                            Seu WhatsApp com DDD *
+                                        </label>
+                                        <input type="tel" id="quiz-whatsapp" required placeholder="Ex: (11) 99999-9999"
+                                               class="w-full px-4 py-3 rounded-xl bg-brand-bg/60 border border-brand-border text-sm text-brand-text focus:outline-none focus:ring-2 focus:ring-brand-accent/50 focus:bg-white transition-all">
+                                    </div>
+                                </div>
+
+                                <!-- Botão de Ação Final -->
+                                <button type="submit"
+                                        class="btn-shimmer w-full py-4 px-6 rounded-xl bg-brand-accent hover:bg-brand-accentDark text-white font-heading font-bold text-sm sm:text-base shadow-[0_8px_25px_rgba(184,146,106,0.4)] transition-all duration-200 flex items-center justify-center gap-2.5">
+                                    <i class="ph-bold ph-whatsapp-logo text-xl"></i>
+                                    <span>Receber Raio-X & Falar com Estrategista</span>
+                                </button>
+
+                                <div class="flex items-center justify-between pt-1">
+                                    <button type="button" class="quiz-back-btn text-xs font-bold text-brand-muted hover:text-brand-text flex items-center gap-1.5 transition-colors">
+                                        <i class="ph-bold ph-arrow-left"></i> Alterar respostas
+                                    </button>
+                                    <p class="text-[11px] text-brand-muted flex items-center gap-1">
+                                        <i class="ph-fill ph-shield-check text-emerald-600"></i>
+                                        <span>Dados 100% seguros</span>
+                                    </p>
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Coluna da Direita: Atendimento Imediato & Informações (5 Colunas) -->
+                    <div class="lg:col-span-5 space-y-6">
+                        
+                        <!-- Card WhatsApp Imediato -->
+                        <div class="bg-brand-card rounded-3xl p-7 sm:p-8 border border-brand-border shadow-[0_10px_30px_rgba(58,50,44,0.03)] relative overflow-hidden">
+                            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-bold uppercase tracking-wider mb-4">
+                                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+                                <span>Atendimento Online Agora</span>
+                            </div>
+
+                            <h3 class="font-heading text-xl sm:text-2xl font-extrabold text-brand-text mb-2">
+                                Prefere falar agora mesmo?
+                            </h3>
+                            <p class="text-xs sm:text-sm text-brand-muted leading-relaxed mb-6">
+                                Inicie uma conversa direta com nosso estrategista e tire todas as suas dúvidas sobre prazos, CRM e estratégias para o seu negócio.
+                            </p>
+
+                            <a href="https://wa.me/5512991525876?text=Ol%C3%A1!%20Gostaria%20de%20tirar%20algumas%20d%C3%BAvidas%20sobre%20a%20cria%C3%A7%C3%A3o%20de%20site."
+                               target="_blank" rel="noopener noreferrer"
+                               class="w-full flex items-center justify-center gap-2 py-3.5 px-6 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-heading font-bold text-sm shadow-[0_6px_20px_rgba(16,185,129,0.3)] transition-all duration-200">
+                                <i class="ph-bold ph-chat-teardrop-dots text-lg"></i>
+                                <span>Iniciar Conversa Imediata</span>
+                            </a>
+                            <p class="text-center text-[11px] text-brand-muted mt-2.5">
+                                Tempo médio de resposta: <strong class="text-brand-text">&lt; 15 minutos</strong>
+                            </p>
+                        </div>
+
+                        <!-- Card de Informações Úteis & Cobertura -->
+                        <div class="bg-brand-card/70 rounded-3xl p-7 border border-brand-border/70 space-y-4">
+                            
+                            <div class="flex items-start gap-3.5">
+                                <div class="w-10 h-10 rounded-xl bg-brand-accent/15 text-brand-accent flex items-center justify-center shrink-0">
+                                    <i class="ph-bold ph-envelope-simple text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-bold uppercase tracking-wider text-brand-muted">E-mail Comercial</p>
+                                    <p class="text-sm font-semibold text-brand-text">contato@estudio18digital.com.br</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3.5 pt-3 border-t border-brand-border/40">
+                                <div class="w-10 h-10 rounded-xl bg-brand-accent/15 text-brand-accent flex items-center justify-center shrink-0">
+                                    <i class="ph-bold ph-clock text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-bold uppercase tracking-wider text-brand-muted">Horário de Atendimento</p>
+                                    <p class="text-sm font-semibold text-brand-text">Segunda a Sexta: 09h às 19h (Brasília)</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3.5 pt-3 border-t border-brand-border/40">
+                                <div class="w-10 h-10 rounded-xl bg-brand-accent/15 text-brand-accent flex items-center justify-center shrink-0">
+                                    <i class="ph-bold ph-globe text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-bold uppercase tracking-wider text-brand-muted">Cobertura</p>
+                                    <p class="text-sm font-semibold text-brand-text">Atendimento 100% Remoto em Todo o Brasil</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
     </main>
 
-    <!-- Script para controle interativo básico -->
+    <!-- ========================================================================= -->
+    <!-- FOOTER / RODAPÉ INSTITUCIONAL                                            -->
+    <!-- ========================================================================= -->
+    <footer class="bg-brand-text text-brand-bg relative z-20 pt-16 pb-12 border-t border-brand-border">
+        <div class="max-w-7xl mx-auto px-6 w-full">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+                
+                <!-- Coluna 1: Logotipo e Descrição (5 colunas) -->
+                <div class="lg:col-span-5 space-y-4">
+                    <a href="#inicio" class="flex items-center gap-3 group">
+                        <img src="./img/logo-18.png" alt="Estúdio 18 Digital" class="h-11 sm:h-12 w-auto object-contain drop-shadow-md group-hover:scale-105 transition-transform">
+                        <div class="flex flex-col leading-tight">
+                            <span class="font-heading font-extrabold text-lg sm:text-xl tracking-tight text-white group-hover:text-brand-accent transition-colors">ESTÚDIO 18 DIGITAL</span>
+                            <span class="text-[9.5px] uppercase tracking-[0.18em] font-semibold text-white/60">Infraestrutura de Vendas & Crescimento</span>
+                        </div>
+                    </a>
+                    <p class="text-sm text-white/70 max-w-sm leading-relaxed">
+                        Especialistas em desenvolvimento de sites de alta conversão, landing pages exclusivas e ecossistemas digitais com CRM próprio de vendas.
+                    </p>
+                    <div class="pt-2 flex flex-wrap items-center gap-3 text-white/80">
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-xs font-medium">
+                            <i class="ph-fill ph-shield-check text-emerald-400"></i> SSL 256-bit Seguro
+                        </span>
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-xs font-medium">
+                            <i class="ph-fill ph-lightning text-amber-400"></i> PageSpeed 95+
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Coluna 2: Navegação Rápida (3 colunas) -->
+                <div class="lg:col-span-3 space-y-3">
+                    <p class="text-xs font-bold uppercase tracking-widest text-brand-accent">Navegação</p>
+                    <ul class="space-y-2 text-sm text-white/70">
+                        <li><a href="#inicio" class="hover:text-white transition-colors">Início</a></li>
+                        <li><a href="#portfolio" class="hover:text-white transition-colors">Portfólio de Projetos</a></li>
+                        <li><a href="#planos" class="hover:text-white transition-colors">Planos & Preços</a></li>
+                        <li><a href="#contato" class="hover:text-white transition-colors">Diagnóstico Gratuito</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Contato & Atendimento (4 colunas) -->
+                <div class="lg:col-span-4 space-y-3">
+                    <p class="text-xs font-bold uppercase tracking-widest text-brand-accent">Atendimento</p>
+                    <p class="text-sm text-white/70 leading-relaxed">
+                        Precisa de um projeto com urgência ou tem dúvidas técnicas? Fale com nosso time comercial.
+                    </p>
+                    <div class="pt-1">
+                        <a href="https://wa.me/5512991525876?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Est%C3%BAdio%2018%20Digital."
+                           target="_blank" rel="noopener noreferrer"
+                           class="inline-flex items-center gap-2 text-sm font-bold text-brand-accent hover:text-white transition-colors">
+                            <i class="ph-bold ph-whatsapp-logo text-base"></i>
+                            <span>Falar no WhatsApp Comercial</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Linha Inferior: Copyright e Links Legais -->
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/50">
+                <p>© 2026 Estúdio 18 Digital. Todos os direitos reservados. Infraestrutura de Vendas & Crescimento.</p>
+                <div class="flex items-center gap-6">
+                    <a href="#inicio" class="hover:text-white/80 transition-colors">Voltar ao topo ↑</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Script para controle interativo básico, filtros, FAQ e formulário -->
     <script>
         // Transição sutil do cabeçalho em pílula no scroll
         const headerPill = document.querySelector('header > div:first-child');
@@ -414,6 +1678,424 @@
                 mobileMenu.classList.add('hidden');
             });
         });
+
+        // ==========================================
+        // CARROSSEL DE PORTFÓLIO EM LINHA ESTILO NETFLIX
+        // ==========================================
+        const portfolioTrack = document.getElementById('portfolio-track');
+        const prevBtn = document.getElementById('portfolio-prev-btn');
+        const nextBtn = document.getElementById('portfolio-next-btn');
+        const floatingPrevBtn = document.getElementById('floating-prev-btn');
+        const floatingNextBtn = document.getElementById('floating-next-btn');
+        const filterBtns = document.querySelectorAll('.portfolio-filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        // Função para rolar o carrossel
+        function scrollPortfolio(direction) {
+            if (!portfolioTrack) return;
+            // Largura estimada de um card + gap
+            const firstCard = portfolioTrack.querySelector('.portfolio-item:not(.hidden)');
+            const cardWidth = firstCard ? firstCard.offsetWidth + 24 : 380;
+            const scrollAmount = direction === 'left' ? -cardWidth : cardWidth;
+            
+            portfolioTrack.scrollBy({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+
+        // Eventos nos botões de navegação
+        if (prevBtn) prevBtn.addEventListener('click', () => scrollPortfolio('left'));
+        if (nextBtn) nextBtn.addEventListener('click', () => scrollPortfolio('right'));
+        if (floatingPrevBtn) floatingPrevBtn.addEventListener('click', () => scrollPortfolio('left'));
+        if (floatingNextBtn) floatingNextBtn.addEventListener('click', () => scrollPortfolio('right'));
+
+        // Atualizar estado de desabilitado dos botões de navegação
+        function updateCarouselButtons() {
+            if (!portfolioTrack) return;
+            const maxScrollLeft = portfolioTrack.scrollWidth - portfolioTrack.clientWidth - 5;
+            const isAtStart = portfolioTrack.scrollLeft <= 5;
+            const isAtEnd = portfolioTrack.scrollLeft >= maxScrollLeft;
+
+            if (prevBtn) prevBtn.disabled = isAtStart;
+            if (nextBtn) nextBtn.disabled = isAtEnd;
+            if (floatingPrevBtn) floatingPrevBtn.style.opacity = isAtStart ? '0' : '';
+            if (floatingNextBtn) floatingNextBtn.style.opacity = isAtEnd ? '0' : '';
+        }
+
+        if (portfolioTrack) {
+            portfolioTrack.addEventListener('scroll', updateCarouselButtons);
+            window.addEventListener('resize', updateCarouselButtons);
+            // Inicializar estado
+            setTimeout(updateCarouselButtons, 200);
+
+            // Suporte a arrastar com o mouse (Drag to scroll)
+            let isDown = false;
+            let startX;
+            let scrollLeftPos;
+
+            portfolioTrack.addEventListener('mousedown', (e) => {
+                isDown = true;
+                portfolioTrack.classList.add('cursor-grabbing');
+                portfolioTrack.classList.remove('cursor-grab');
+                startX = e.pageX - portfolioTrack.offsetLeft;
+                scrollLeftPos = portfolioTrack.scrollLeft;
+            });
+
+            portfolioTrack.addEventListener('mouseleave', () => {
+                isDown = false;
+                portfolioTrack.classList.remove('cursor-grabbing');
+                portfolioTrack.classList.add('cursor-grab');
+            });
+
+            portfolioTrack.addEventListener('mouseup', () => {
+                isDown = false;
+                portfolioTrack.classList.remove('cursor-grabbing');
+                portfolioTrack.classList.add('cursor-grab');
+            });
+
+            portfolioTrack.addEventListener('mousemove', (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - portfolioTrack.offsetLeft;
+                const walk = (x - startX) * 1.5; // multiplicador de sensibilidade
+                portfolioTrack.scrollLeft = scrollLeftPos - walk;
+            });
+        }
+
+        // Filtros interativos do Portfólio no Carrossel
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.getAttribute('data-filter');
+
+                // Atualizar estado visual dos botões
+                filterBtns.forEach(b => {
+                    b.classList.remove('active', 'bg-brand-text', 'text-white');
+                    b.classList.add('text-brand-muted');
+                });
+                btn.classList.add('active', 'bg-brand-text', 'text-white');
+                btn.classList.remove('text-brand-muted');
+
+                // Filtrar os cards com transição suave
+                portfolioItems.forEach(item => {
+                    const categories = item.getAttribute('data-category').split(' ');
+                    if (filter === 'all' || categories.includes(filter)) {
+                        item.classList.remove('hidden');
+                        item.style.opacity = '1';
+                        item.style.transform = 'scale(1)';
+                    } else {
+                        item.classList.add('hidden');
+                        item.style.opacity = '0';
+                    }
+                });
+
+                // Resetar posição de scroll ao filtrar
+                if (portfolioTrack) {
+                    portfolioTrack.scrollTo({ left: 0, behavior: 'smooth' });
+                    setTimeout(updateCarouselButtons, 300);
+                }
+            });
+        });
+
+        // Acordeão do FAQ
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const answer = btn.nextElementSibling;
+                const icon = btn.querySelector('i');
+                const isHidden = answer.classList.contains('hidden');
+
+                // Fechar outros itens abertos
+                document.querySelectorAll('.faq-answer').forEach(ans => ans.classList.add('hidden'));
+                document.querySelectorAll('.faq-question i').forEach(ic => ic.classList.remove('rotate-180', 'text-brand-accent'));
+
+                if (isHidden) {
+                    answer.classList.remove('hidden');
+                    icon.classList.add('rotate-180', 'text-brand-accent');
+                }
+            });
+        });
+
+        // ==========================================
+        // QUIZ INTERATIVO & GAMIFICADO DE DIAGNÓSTICO
+        // ==========================================
+        const quizData = {
+            foco: '',
+            nicho: '',
+            gargalo: '',
+            volume: '',
+            nome: '',
+            whatsapp: '',
+            planoRecomendado: ''
+        };
+
+        let currentQuizStep = 1;
+        const totalQuizSteps = 5;
+
+        const stepTitles = {
+            1: 'Objetivo Principal',
+            2: 'Segmento de Mercado',
+            3: 'Maior Gargalo Atual',
+            4: 'Volume de Atendimento',
+            5: 'Raio-X & Estrutura Ideal'
+        };
+
+        const quizStepElements = document.querySelectorAll('.quiz-step');
+        const currentStepNumEl = document.getElementById('quiz-current-step-num');
+        const stepTitleEl = document.getElementById('quiz-step-title');
+        const stepPercentageEl = document.getElementById('quiz-step-percentage');
+        const progressBarEl = document.getElementById('quiz-progress-bar');
+        const backButtons = document.querySelectorAll('.quiz-back-btn');
+        const quizOptions = document.querySelectorAll('.quiz-option');
+        const quizFinalForm = document.getElementById('quiz-final-form');
+
+        function updateQuizUI(step) {
+            currentQuizStep = step;
+            const percentage = Math.round((step / totalQuizSteps) * 100);
+
+            // Atualizar textos e indicadores
+            if (currentStepNumEl) currentStepNumEl.textContent = step;
+            if (stepTitleEl) stepTitleEl.textContent = stepTitles[step] || '';
+            if (stepPercentageEl) stepPercentageEl.textContent = `${percentage}%`;
+            if (progressBarEl) progressBarEl.style.width = `${percentage}%`;
+
+            // Alternar visibilidade dos passos
+            quizStepElements.forEach(stepEl => {
+                const stepNum = parseInt(stepEl.getAttribute('data-step'));
+                if (stepNum === step) {
+                    stepEl.classList.remove('hidden');
+                    stepEl.style.opacity = '0';
+                    stepEl.style.transform = 'translateY(8px)';
+                    setTimeout(() => {
+                        stepEl.style.transition = 'all 0.3s ease';
+                        stepEl.style.opacity = '1';
+                        stepEl.style.transform = 'translateY(0)';
+                    }, 30);
+                } else {
+                    stepEl.classList.add('hidden');
+                }
+            });
+
+            // Se for o passo 5, calcular recomendação
+            if (step === 5) {
+                calculateRecommendation();
+            }
+        }
+
+        function calculateRecommendation() {
+            const planResultEl = document.getElementById('quiz-result-plan');
+            const descResultEl = document.getElementById('quiz-result-desc');
+
+            let plano = 'Plano Conversão (LP + CRM Integrado) ⭐';
+            let desc = 'A infraestrutura definitiva: Landing Page de alta conversão integrada ao CRM proprietário para centralizar e não perder nenhum contato no WhatsApp.';
+
+            if (quizData.foco.includes('Tráfego') || quizData.volume.includes('+20')) {
+                plano = 'Plano Growth (Ecossistema + Tráfego Pago) 🚀';
+                desc = 'Infraestrutura completa aliada à gestão de tráfego de alta performance no Meta e Google Ads para escalar seu volume de vendas.';
+            } else if (quizData.foco.includes('Landing Page') && quizData.volume.includes('1 a 5')) {
+                plano = 'Plano Presença (LP de Alta Conversão + Manutenção)';
+                desc = 'Ideal para validação e presença digital com página rápida, copywriting persuasivo, domínio e manutenção técnica inclusos.';
+            } else if (quizData.foco.includes('Institucional')) {
+                plano = 'Plano Corporativo & Autoridade Digital';
+                desc = 'Estrutura institucional completa para consolidação de marca, captação qualificada B2B e máxima credibilidade de mercado.';
+            }
+
+            quizData.planoRecomendado = plano;
+            if (planResultEl) planResultEl.textContent = plano;
+            if (descResultEl) descResultEl.textContent = desc;
+        }
+
+        // Evento de clique nas opções do Quiz
+        quizOptions.forEach(opt => {
+            opt.addEventListener('click', () => {
+                const key = opt.getAttribute('data-key');
+                const val = opt.getAttribute('data-value');
+
+                if (key && val) {
+                    quizData[key] = val;
+                }
+
+                // Efeito visual de seleção
+                const parent = opt.closest('.quiz-step');
+                if (parent) {
+                    parent.querySelectorAll('.quiz-option').forEach(o => {
+                        o.classList.remove('border-brand-accent', 'bg-brand-accent/10');
+                    });
+                }
+                opt.classList.add('border-brand-accent', 'bg-brand-accent/10');
+
+                // Avançar para a próxima etapa com leve delay para percepção do clique
+                setTimeout(() => {
+                    if (currentQuizStep < totalQuizSteps) {
+                        updateQuizUI(currentQuizStep + 1);
+                    }
+                }, 220);
+            });
+        });
+
+        // Evento nos botões de voltar
+        backButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                if (currentQuizStep > 1) {
+                    updateQuizUI(currentQuizStep - 1);
+                }
+            });
+        });
+
+        // ==========================================
+        // SISTEMA DE TRÁFEGO PAGO & RASTREAMENTO (UTMs, META & GOOGLE ADS)
+        // ==========================================
+        const UTM_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'gclid', 'fbclid', 'src'];
+        
+        function captureAndStoreUTMs() {
+            const urlParams = new URLSearchParams(window.location.search);
+            let utmData = {};
+
+            // Recuperar do sessionStorage se já existir na sessão
+            try {
+                const stored = sessionStorage.getItem('estudio18_traffic_source');
+                if (stored) utmData = JSON.parse(stored);
+            } catch (e) {}
+
+            // Atualizar com parâmetros presentes na URL atual
+            UTM_KEYS.forEach(key => {
+                const val = urlParams.get(key);
+                if (val) utmData[key] = val;
+            });
+
+            // Se não houver UTMs identificadas, registrar referrer ou direto
+            if (!utmData.utm_source) {
+                if (document.referrer.includes('google')) utmData.utm_source = 'google_organico';
+                else if (document.referrer.includes('instagram')) utmData.utm_source = 'instagram_organico';
+                else if (document.referrer.includes('facebook')) utmData.utm_source = 'facebook_organico';
+                else if (document.referrer) utmData.utm_source = 'referrer_externo';
+                else utmData.utm_source = 'direto';
+            }
+
+            try {
+                sessionStorage.setItem('estudio18_traffic_source', JSON.stringify(utmData));
+            } catch (e) {}
+
+            return utmData;
+        }
+
+        const currentTraffic = captureAndStoreUTMs();
+
+        function getTrafficSummaryText() {
+            let info = `\n\n🏷️ *ORIGEM DO TRÁFEGO:*`;
+            info += `\n• *Origem:* ${currentTraffic.utm_source || 'Direto'}`;
+            if (currentTraffic.utm_campaign) info += `\n• *Campanha:* ${currentTraffic.utm_campaign}`;
+            if (currentTraffic.utm_content) info += `\n• *Criativo/Anúncio:* ${currentTraffic.utm_content}`;
+            if (currentTraffic.utm_term) info += `\n• *Termo:* ${currentTraffic.utm_term}`;
+            if (currentTraffic.gclid) info += `\n• *Google Ads ID:* ${currentTraffic.gclid.substring(0, 10)}...`;
+            if (currentTraffic.fbclid) info += `\n• *Meta Ads ID:* ${currentTraffic.fbclid.substring(0, 10)}...`;
+            return info;
+        }
+
+        // Disparador Universal de Eventos de Conversão (Meta Pixel, Google Ads / GA4, GTM)
+        function trackConversionEvent(eventName, params = {}) {
+            // Meta Pixel (fbq)
+            if (typeof window.fbq === 'function') {
+                window.fbq('track', eventName, params);
+            }
+            // Google Analytics 4 / Google Ads (gtag)
+            if (typeof window.gtag === 'function') {
+                window.gtag('event', eventName, params);
+            }
+            // Google Tag Manager (dataLayer)
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                event: eventName,
+                traffic_source: currentTraffic.utm_source || 'direto',
+                ...params
+            });
+        }
+
+        // Submissão do Formulário Final do Quiz
+        if (quizFinalForm) {
+            quizFinalForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                const nome = document.getElementById('quiz-name').value.trim();
+                const whatsapp = document.getElementById('quiz-whatsapp').value.trim();
+
+                quizData.nome = nome;
+                quizData.whatsapp = whatsapp;
+
+                // Disparo de Evento de Conversão LEAD
+                trackConversionEvent('Lead', {
+                    content_name: 'Diagnostico_Quiz_Vendas',
+                    recommended_plan: quizData.planoRecomendado,
+                    niche: quizData.nicho,
+                    value: 800.00,
+                    currency: 'BRL'
+                });
+
+                let mensagemFormatada = `🎯 *DIAGNÓSTICO INTERATIVO DE VENDAS*\n` +
+                                        `*Estúdio 18 Digital — Infraestrutura de Vendas*\n\n` +
+                                        `👤 *Nome:* ${nome}\n` +
+                                        `📱 *WhatsApp:* ${whatsapp}\n\n` +
+                                        `📊 *RAIO-X DO PROJETO:*\n` +
+                                        `• *Objetivo:* ${quizData.foco || 'Crescimento de Vendas'}\n` +
+                                        `• *Segmento:* ${quizData.nicho || 'Não especificado'}\n` +
+                                        `• *Maior Desafio:* ${quizData.gargalo || 'Otimização de Conversão'}\n` +
+                                        `• *Volume Pretendido:* ${quizData.volume || '6 a 20 atendimentos/dia'}\n\n` +
+                                        `⭐ *ESTRUTURA RECOMENDADA PELO DIAGNÓSTICO:*\n` +
+                                        `*${quizData.planoRecomendado || 'Plano Conversão (LP + CRM)'}*` +
+                                        getTrafficSummaryText() +
+                                        `\n\n💬 _Olá! Acabei de gerar este diagnóstico na Landing Page e gostaria de falar com um estrategista para iniciar o projeto._`;
+
+                const whatsappUrl = `https://wa.me/5512991525876?text=${encodeURIComponent(mensagemFormatada)}`;
+                window.open(whatsappUrl, '_blank');
+            });
+        }
+
+        // Interceptar cliques em links diretos de WhatsApp para anexar UTMs e disparar evento
+        document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                const currentHref = this.getAttribute('href');
+                if (currentHref.includes('#')) return;
+
+                // Disparar evento de contato
+                trackConversionEvent('Contact', {
+                    content_name: 'Clique_WhatsApp_Direto',
+                    source: currentTraffic.utm_source || 'direto'
+                });
+
+                // Se o link já tem texto, enriquecer com UTMs
+                if (currentHref.includes('text=')) {
+                    const parts = currentHref.split('text=');
+                    const originalText = decodeURIComponent(parts[1] || '');
+                    if (!originalText.includes('ORIGEM DO TRÁFEGO')) {
+                        const enrichedText = originalText + getTrafficSummaryText();
+                        this.setAttribute('href', `${parts[0]}text=${encodeURIComponent(enrichedText)}`);
+                    }
+                }
+            });
+        });
     </script>
+
+    <!-- Botão Flutuante de WhatsApp com Animação de Pulso & Badge Online (Alta Conversão Mobile/Desktop) -->
+    <aside class="fixed bottom-6 right-6 z-50 flex items-center gap-3">
+        <a href="https://wa.me/5512991525876?text=Ol%C3%A1!%20Estou%20no%20site%20do%20Est%C3%BAdio%2018%20Digital%20e%20gostaria%20de%20um%20diagn%C3%B3stico."
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Falar pelo WhatsApp agora"
+           class="group relative flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white shadow-[0_8px_30px_rgba(16,185,129,0.45)] hover:shadow-[0_12px_40px_rgba(16,185,129,0.6)] transition-all duration-300 hover:scale-110 active:scale-95">
+            
+            <!-- Pulso animado de radar -->
+            <span class="absolute inset-0 rounded-full bg-emerald-400 opacity-60 animate-ping pointer-events-none"></span>
+            
+            <!-- Ícone do WhatsApp -->
+            <i class="ph-bold ph-whatsapp-logo text-3xl sm:text-4xl relative z-10"></i>
+
+            <!-- Badge Online Verde -->
+            <span class="absolute top-0 right-0 w-4 h-4 rounded-full bg-emerald-400 border-2 border-white"></span>
+            
+            <!-- Tooltip Flutuante no Hover (Desktop) -->
+            <span class="hidden md:block absolute right-full mr-3 px-3 py-1.5 rounded-xl bg-brand-text text-white text-xs font-bold whitespace-nowrap shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+                Fale com um Estrategista 💬
+            </span>
+        </a>
+    </aside>
 </body>
 </html>
