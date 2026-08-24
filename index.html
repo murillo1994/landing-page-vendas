@@ -4,79 +4,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estúdio 18 Digital | Sites de Alta Conversão & Infraestrutura de Vendas</title>
+    <!-- 1. GOOGLE TAG MANAGER (GTM) - HEAD -->
+    <!-- Inicialização segura do dataLayer antes do snippet do GTM para evitar race conditions -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+    </script>
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-XXXXXXX');
+    </script>
+    <!-- End Google Tag Manager -->
 
-    <meta name="description"
-        content="Estúdio 18 Digital: Desenvolvemos sites exclusivos, landing pages de alta conversão do zero e ecossistemas digitais com CRM integrado para maximizar suas vendas.">
-    <meta name="keywords" content="Estúdio 18 Digital, criação de sites, landing pages, web design premium, desenvolvimento web, sites de alta conversão, CRM WhatsApp">
+    <!-- 2. ESTRUTURA BASE DE SEO & METADADOS OTIMIZADOS -->
+    <title>Estúdio 18 Digital | Landing Pages de Alta Conversão & CRM para Médicos e Empresas em São José dos Campos</title>
+    <meta name="description" content="Boutique de tecnologia em São José dos Campos: Criamos Landing Pages de alta conversão e máquinas de vendas integradas a CRM proprietário para médicos e empresários.">
+    <meta name="keywords" content="Landing Page São José dos Campos, CRM médicos, máquina de vendas, criação de sites alta conversão, Estúdio 18 Digital, funil WhatsApp, tráfego pago médicos">
+    <meta name="author" content="Estúdio 18 Digital">
     <meta name="theme-color" content="#F4EAE3">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <link rel="canonical" href="https://estudio18digital.com.br/">
 
-    <!-- Open Graph / Meta Tags para WhatsApp, Instagram e Facebook -->
+    <!-- 3. OPEN GRAPH (WhatsApp, Facebook, Instagram & LinkedIn) -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://estudio18digital.com.br/">
-    <meta property="og:title" content="Estúdio 18 Digital | Sites de Alta Conversão & Infraestrutura de Vendas">
-    <meta property="og:description" content="Desenvolvemos sites exclusivos, landing pages de alta conversão e ecossistemas digitais com CRM integrado para maximizar suas vendas.">
-    <meta property="og:image" content="./img/logo-18.png">
+    <meta property="og:title" content="Estúdio 18 Digital | Landing Pages de Alta Conversão & CRM Proprietário">
+    <meta property="og:description" content="Transforme cliques em pacientes e clientes qualificados. Estrutura completa de Landing Page de alta velocidade + CRM Kanban no WhatsApp.">
+    <meta property="og:image" content="https://estudio18digital.com.br/img/logo-18.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Logotipo Estúdio 18 Digital - Infraestrutura de Vendas">
     <meta property="og:site_name" content="Estúdio 18 Digital">
     <meta property="og:locale" content="pt_BR">
 
-    <!-- Twitter Cards -->
+    <!-- 4. TWITTER CARDS -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Estúdio 18 Digital | Sites de Alta Conversão">
-    <meta name="twitter:description" content="Landing pages de alta conversão, CRM Kanban para WhatsApp e ecossistemas digitais escaláveis.">
-    <meta name="twitter:image" content="./img/logo-18.png">
+    <meta name="twitter:title" content="Estúdio 18 Digital | Landing Pages & CRM para Médicos e Negócios">
+    <meta name="twitter:description" content="Boutique de Tecnologia: Landing Pages de Alta Conversão e CRM proprietário para acelerar vendas.">
+    <meta name="twitter:image" content="https://estudio18digital.com.br/img/logo-18.png">
 
-    <!-- Schema.org JSON-LD: Estrutura de Dados Rica para Google Search e Google Ads -->
+    <!-- 5. DADOS ESTRUTURADOS (SCHEMA.ORG / JSON-LD: ProfessionalService + SoftwareApplication) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Estúdio 18 Digital",
-      "image": "./img/logo-18.png",
-      "description": "Desenvolvimento de Landing Pages de alta conversão, sites institucionais e ecossistemas com CRM integrado.",
-      "url": "https://estudio18digital.com.br",
-      "telephone": "+5512991525876",
-      "email": "contato@estudio18digital.com.br",
-      "priceRange": "R$ 800 - R$ 1500",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "BR"
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "09:00",
-        "closes": "19:00"
-      },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Serviços de Infraestrutura Digital",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Plano Presença - Landing Page & Manutenção"
-            }
+      "@graph": [
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://estudio18digital.com.br/#empresa",
+          "name": "Estúdio 18 Digital",
+          "legalName": "Estúdio 18 Digital Tecnologia & Design",
+          "image": "https://estudio18digital.com.br/img/logo-18.png",
+          "logo": "https://estudio18digital.com.br/img/logo-18.png",
+          "description": "Boutique de Tecnologia especializada no desenvolvimento de Landing Pages de alta conversão e licenciamento de CRM proprietário para médicos, clínicas e empresários.",
+          "url": "https://estudio18digital.com.br",
+          "telephone": "+5512991525876",
+          "email": "contato@estudio18digital.com.br",
+          "priceRange": "R$ 800 - R$ 1500",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "São José dos Campos",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
           },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Plano Conversão - Landing Page + CRM WhatsApp Integrado"
-            }
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-23.2237",
+            "longitude": "-45.9009"
           },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Plano Growth - Ecossistema Digital & Tráfego Pago"
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "São José dos Campos"
+            },
+            {
+              "@type": "Country",
+              "name": "Brasil"
             }
+          ],
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "19:00"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Catálogo de Infraestrutura Digital",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Plano Presença: Setup de Landing Page + Manutenção e Domínio"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Plano Conversão: Landing Page de Alta Performance + CRM Kanban WhatsApp"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Plano Growth: Ecossistema Digital Completo + Gestão de Tráfego Pago"
+                }
+              }
+            ]
           }
-        ]
-      }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://estudio18digital.com.br/#crm",
+          "name": "CRM Estúdio 18 Digital",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web, iOS, Android",
+          "description": "CRM proprietário com funil Kanban integrado ao WhatsApp para gestão e acompanhamento de leads em tempo real para clínicas e empresas.",
+          "offers": {
+            "@type": "Offer",
+            "price": "150.00",
+            "priceCurrency": "BRL"
+          }
+        }
+      ]
     }
     </script>
 
@@ -196,6 +250,10 @@
 </head>
 
 <body class="bg-brand-bg text-brand-text relative min-h-screen overflow-x-hidden selection:bg-brand-accent selection:text-white">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- Ambient Glow / Iluminação de Fundo Suave -->
     <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden" aria-hidden="true">
@@ -1992,23 +2050,27 @@
             return info;
         }
 
-        // Disparador Universal de Eventos de Conversão (Meta Pixel, Google Ads / GA4, GTM)
-        function trackConversionEvent(eventName, params = {}) {
-            // Meta Pixel (fbq)
-            if (typeof window.fbq === 'function') {
-                window.fbq('track', eventName, params);
-            }
-            // Google Analytics 4 / Google Ads (gtag)
-            if (typeof window.gtag === 'function') {
-                window.gtag('event', eventName, params);
-            }
-            // Google Tag Manager (dataLayer)
+        // Disparador Centralizado de Eventos na Camada de Dados (Data Layer / GTM)
+        function pushToDataLayer(eventName, customParams = {}) {
             window.dataLayer = window.dataLayer || [];
-            window.dataLayer.push({
+            
+            const payload = {
                 event: eventName,
+                event_name: customParams.event_name || eventName,
+                lead_type: customParams.lead_type || 'geral',
+                value: customParams.value || 0.00,
+                currency: 'BRL',
                 traffic_source: currentTraffic.utm_source || 'direto',
-                ...params
-            });
+                traffic_campaign: currentTraffic.utm_campaign || 'nenhuma',
+                traffic_content: currentTraffic.utm_content || 'nenhum',
+                gclid: currentTraffic.gclid || '',
+                fbclid: currentTraffic.fbclid || '',
+                timestamp: new Date().toISOString(),
+                ...customParams
+            };
+
+            window.dataLayer.push(payload);
+            console.log('[GTM DataLayer Push]:', payload);
         }
 
         // Submissão do Formulário Final do Quiz
@@ -2022,13 +2084,20 @@
                 quizData.nome = nome;
                 quizData.whatsapp = whatsapp;
 
-                // Disparo de Evento de Conversão LEAD
-                trackConversionEvent('Lead', {
-                    content_name: 'Diagnostico_Quiz_Vendas',
-                    recommended_plan: quizData.planoRecomendado,
-                    niche: quizData.nicho,
+                // Disparo de Evento de Conversão LEAD para o Google Tag Manager (GTM)
+                // Otimizado para Meta CAPI (Advanced Matching) e Google Ads (Enhanced Conversions)
+                pushToDataLayer('generate_lead', {
+                    event_name: 'Lead',
+                    lead_type: 'quiz_diagnostico_interativo',
+                    lead_niche: quizData.nicho || 'Geral',
+                    lead_goal: quizData.foco || 'Crescimento',
+                    recommended_plan: quizData.planoRecomendado || 'Plano Conversão',
                     value: 800.00,
-                    currency: 'BRL'
+                    user_data: {
+                        first_name: nome.split(' ')[0] || '',
+                        full_name: nome,
+                        phone_number: whatsapp.replace(/\D/g, '')
+                    }
                 });
 
                 let mensagemFormatada = `🎯 *DIAGNÓSTICO INTERATIVO DE VENDAS*\n` +
@@ -2050,16 +2119,20 @@
             });
         }
 
-        // Interceptar cliques em links diretos de WhatsApp para anexar UTMs e disparar evento
+        // Interceptar cliques em links diretos de WhatsApp para anexar UTMs e disparar evento no DataLayer
         document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
             link.addEventListener('click', function(e) {
                 const currentHref = this.getAttribute('href');
                 if (currentHref.includes('#')) return;
 
-                // Disparar evento de contato
-                trackConversionEvent('Contact', {
-                    content_name: 'Clique_WhatsApp_Direto',
-                    source: currentTraffic.utm_source || 'direto'
+                const ctaText = this.innerText.trim() || 'WhatsApp Direto';
+
+                // Disparar evento de contato no DataLayer
+                pushToDataLayer('contact_whatsapp', {
+                    event_name: 'Contact',
+                    lead_type: 'whatsapp_cta_click',
+                    cta_label: ctaText,
+                    value: 150.00
                 });
 
                 // Se o link já tem texto, enriquecer com UTMs
